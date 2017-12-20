@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "168a7f71c80d936b7244e4be690ef57e",
+    "content-hash": "0df15dcb6e87154c88a981f258811bf3",
     "packages": [
         {
             "name": "composer/installers",
@@ -422,16 +422,16 @@
             "time": "2017-12-18T16:48:55+00:00"
         },
         {
-            "name": "wpackagist-plugin/forms-contact",
-            "version": "dev-trunk",
+            "name": "wpackagist-plugin/contact-form-7",
+            "version": "4.9.2",
             "source": {
                 "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/forms-contact/",
-                "reference": "trunk"
+                "url": "https://plugins.svn.wordpress.org/contact-form-7/",
+                "reference": "tags/4.9.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/forms-contact.zip?timestamp=1512996218",
+                "url": "https://downloads.wordpress.org/plugin/contact-form-7.4.9.2.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -439,8 +439,27 @@
                 "composer/installers": "~1.0"
             },
             "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/forms-contact/",
-            "time": "2017-12-11T12:43:38+00:00"
+            "homepage": "https://wordpress.org/plugins/contact-form-7/"
+        },
+        {
+            "name": "wpackagist-plugin/wp-migrate-db",
+            "version": "1.0.2",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/wp-migrate-db/",
+                "reference": "tags/1.0.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/wp-migrate-db.1.0.2.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/wp-migrate-db/"
         }
     ],
     "packages-dev": [
@@ -497,12 +516,11 @@
         }
     ],
     "aliases": [],
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "stability-flags": {
-        "wpackagist-plugin/akismet": 20,
-        "wpackagist-plugin/forms-contact": 20
+        "wpackagist-plugin/akismet": 20
     },
-    "prefer-stable": false,
+    "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
         "php": ">=5.6"
