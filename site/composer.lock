@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "0df15dcb6e87154c88a981f258811bf3",
+    "content-hash": "28a7ab524b9ef21a7c99ac8632c613d9",
     "packages": [
         {
             "name": "composer/installers",
@@ -442,6 +442,48 @@
             "homepage": "https://wordpress.org/plugins/contact-form-7/"
         },
         {
+            "name": "wpackagist-plugin/testimonials-by-woothemes",
+            "version": "dev-trunk",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/testimonials-by-woothemes/",
+                "reference": "trunk"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/testimonials-by-woothemes.zip?timestamp=1446628368",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/testimonials-by-woothemes/",
+            "time": "2015-11-04T09:12:48+00:00"
+        },
+        {
+            "name": "wpackagist-plugin/woocommerce",
+            "version": "dev-trunk",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/woocommerce/",
+                "reference": "trunk"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/woocommerce.zip?timestamp=1513182244",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/woocommerce/",
+            "time": "2017-12-13T16:24:04+00:00"
+        },
+        {
             "name": "wpackagist-plugin/wp-migrate-db",
             "version": "1.0.2",
             "source": {
@@ -518,7 +560,9 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "wpackagist-plugin/akismet": 20
+        "wpackagist-plugin/akismet": 20,
+        "wpackagist-plugin/testimonials-by-woothemes": 20,
+        "wpackagist-plugin/woocommerce": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,

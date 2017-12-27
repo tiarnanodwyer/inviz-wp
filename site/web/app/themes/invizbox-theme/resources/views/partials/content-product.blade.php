@@ -97,3 +97,19 @@
 </div>
 </div>
 <?php endif; ?>
+<!-- Testimonial -->
+
+<div class="panel-testimonial">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-8">
+
+                	<?php do_action( 'woothemes_testimonials', array( 'limit' => 1, 'category' => 'invizbox-pro' )  ); ?>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
