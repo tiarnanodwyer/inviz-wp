@@ -37,7 +37,7 @@
   "type": "package",
   "package": {
     "name": "advanced-custom-fields/advanced-custom-fields-pro",
-    "version": "5.6.7",
+    "version": "5.3.8",
     "type": "wordpress-plugin",
     "dist": {
       "type": "zip",
@@ -45,7 +45,7 @@
     },
     "require": {
       "philippbaschke/acf-pro-installer": "^1.0",
-      "composer/installers": "^1.0"
+       "composer/installers": "^1.0"
     }
   }
 }
@@ -53,7 +53,7 @@
   "require": {
     "php": ">=5.6",
     "composer/installers": "^1.4",
-    "advanced-custom-fields/advanced-custom-fields-pro": "5.6.7",
+    "advanced-custom-fields/advanced-custom-fields-pro": "5.3.8",
     "vlucas/phpdotenv": "^2.0.1",
     "johnpbloch/wordpress": "4.9.1",
     "oscarotero/env": "^1.1.0",
@@ -61,8 +61,7 @@
     "wpackagist-plugin/akismet": "dev-trunk",
     "wpackagist-plugin/contact-form-7": "^4.9",
     "wpackagist-plugin/wp-migrate-db": "^1.0",
-    "wpackagist-plugin/testimonials-by-woothemes": "dev-trunk",
-    "wpackagist-plugin/woocommerce": "dev-trunk"
+    "wpackagist-plugin/testimonials-by-woothemes": "dev-trunk"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^3.0.2"

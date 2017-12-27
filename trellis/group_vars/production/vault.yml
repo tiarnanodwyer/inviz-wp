@@ -13,6 +13,7 @@ vault_wordpress_sites:
   invizbox.com:
     env:
       db_password: "5bT+?jnnfkEq_SeWdAf3s24m"
+      acf_pro_key: "b3JkZXJfaWQ9MzUzODh8dHlwZT1wZXJzb25hbHxkYXRlPTIwMTQtMDctMjEgMTU6MjY6Mzg="
       # Generate your keys here: https://roots.io/salts.html
       auth_key: "4RHYORHH@9B5pC3g$!jwq2Oc}Z*_9v=Lufbr&4)J:*7V`O*%,.^wRi$5IAKr</c;"
       secure_auth_key: "Qb@`ZtW[zMs*tDv(jmUBs:%bhD=e&)mgQdJbm([$tzEW:7Gr2B>9NB::NmR-7cxP"
