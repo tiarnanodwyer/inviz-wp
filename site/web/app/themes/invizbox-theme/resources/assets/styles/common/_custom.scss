@@ -1,11 +1,14 @@
 $color-primary: #ffd900;
 $color-black: #2a2b2c;
 $color-grey: whitesmoke;
+
 body {
   font-size: 14px;
   color: $color-black;
-  margin-bottom: 50px;
+  color: red;
 }
+
+
 
 
 /* ---------------------- Typography ---------------------- */
@@ -52,6 +55,8 @@ hr.small {
 }
 
 
+
+
 /* ---------------------- Navigation ---------------------- */
 
 .navbar-inverse .navbar-nav {
@@ -63,6 +68,8 @@ hr.small {
     border-radius: 2px;
   }
 }
+
+
 
 
 /* ---------------------- Buckets ---------------------- */
@@ -101,13 +108,21 @@ hr.small {
 }
 
 
+
+
 /* ---------------------- Feature Panels ---------------------- */
 
 .media {
+  margin: 2rem 0;
+  h5 {
+    font-size: 1.15rem;
+  }
   img {
     width: 64px;
   }
 }
+
+
 
 
 /* ---------------------- Panels ---------------------- */
@@ -134,7 +149,23 @@ hr.small {
   }
 }
 
-.box11 {
+
+
+
+/* ---------------------- Bucket Detail ---------------------- */
+
+.bucket-detail {
+  &:nth-of-type(2n) {
+    background: $color-grey;
+    .bucket-content {
+      -ms-flex-order: 1;
+      order: 1;
+    }
+    .bucket-image {
+      -ms-flex-order: 2;
+      order: 2;
+    }
+  }
   img {
     width: 100%;
     margin: 4rem auto;
@@ -143,11 +174,16 @@ hr.small {
 }
 
 
+
+
 /* ---------------------- Jumbotron ---------------------- */
 
 .jumbotron {
   background: $color-black;
   border-radius: 0;
+  background-repeat: no-repeat;
+  background-position: 25% center;
+  background-size: cover;
   .jumbotron-detail {
     text-align: center;
     padding: 2.5rem 0 1rem;
@@ -169,7 +205,7 @@ hr.small {
   }
   .jumbotron-detail-product {
     text-align: center;
-    padding: 4rem 2rem 8rem;
+    padding: 7.5rem 2rem 8rem;
     h1 {
       color: white;
       font-size: 2.5rem;
@@ -180,6 +216,8 @@ hr.small {
     }
   }
 }
+
+
 
 
 /* ---------------------- Pricing Panel ---------------------- */
@@ -243,6 +281,8 @@ hr.small {
 }
 
 
+
+
 /* ---------------------- Product Hero ---------------------- */
 
 .accreditation {
@@ -258,6 +298,8 @@ hr.small {
 }
 
 
+
+
 /* ---------------------- Product Hero ---------------------- */
 
 .product-shot-main {
@@ -269,6 +311,8 @@ hr.small {
     margin-top: 2rem;
   }
 }
+
+
 
 
 /* ---------------------- Product Box ---------------------- */
@@ -296,6 +340,8 @@ hr.small {
 }
 
 
+
+
 /* ---------------------- Buttons ---------------------- */
 
 .btn-primary {
@@ -314,16 +360,18 @@ hr.small {
   color: #2a2b2c;
   border-radius: 2px;
   min-width: 200px;
-  font-size: 1rem;
-  text-transform: uppercase;
+  font-size: 1.25rem;
   font-weight: 600;
   padding: 1rem;
+  border: 0;
 }
 
 .btn-cta-normal {
   background: $color-primary;
   color: #2a2b2c;
 }
+
+
 
 
 /* ---------------------- Login ---------------------- */
@@ -344,6 +392,8 @@ hr.small {
     margin-bottom: 16px;
   }
 }
+
+
 
 
 /* ---------------------- Product Page ---------------------- */
@@ -400,12 +450,14 @@ hr.small {
 }
 
 
+
+
 /* ---------------------- Footer ---------------------- */
 
 footer {
   background: $color-black;
   color: white;
-  padding: 4rem 0;
+  padding: 4rem 0 8rem;
   .form-group {
     display: inline-block;
   }
@@ -417,6 +469,22 @@ footer {
       margin: 0 0.25rem;
     }
   }
+
+  h5 {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    opacity: 0.65;
+    margin-bottom: 2rem;
+  }
+
+
+  .menu {
+    padding-left: 0;
+    list-style: none;
+    li {
+      margin-bottom: 1rem;
+    }
+  }
   .footer-base {
     margin: 3rem 0 1rem;
     padding: 1rem;
@@ -425,6 +493,8 @@ footer {
     opacity: 0.5;
   }
 }
+
+
 
 
 /* ---------------------- Media Queries ---------------------- */
@@ -480,7 +550,7 @@ footer {
       font-style: italic;
     }
   }
-  .box11 {
+  .bucket-detail {
     h2 {
       font-size: 2rem;
       line-height: 2.5rem;
