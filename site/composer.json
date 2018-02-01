@@ -65,7 +65,8 @@
     "wpackagist-plugin/duplicate-page": "dev-trunk",
     "wpackagist-plugin/mailchimp-for-wp": "dev-trunk",
     "wpackagist-plugin/font-awesome": "dev-trunk",
-    "wpackagist-plugin/svg-support": "dev-trunk"
+    "wpackagist-plugin/svg-support": "dev-trunk",
+    "wpackagist-plugin/woocommerce": "dev-trunk"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "3.*"
