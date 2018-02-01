@@ -46,6 +46,45 @@
 		</div>
 	</div>
 <?php endif; ?>
+
+
+
+
+
+
+
+<!-- As Featured Panel-->
+<?php if ( have_rows( 'featured_on' ) ): ?>
+<div class="panel-wide">
+		<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<h2 class="sub text-center">As featured on </h2>
+			</div>
+		</div>
+		<div class="row">
+			<?php while ( have_rows( 'featured_on' ) ) : the_row();
+			$image = get_sub_field( 'image' );
+			$title = get_sub_field( 'title' );
+			$url = get_sub_field( 'url' );
+			?>
+
+			<div class="col-sm-4 col-md-2">
+				<div class="accreditation">
+					<a href="<?php echo $url; ?>">
+						<img src="<?php echo $image; ?>" alt="">
+						<p><?php echo $title; ?></p>
+					</a>
+				</div>
+			</div>
+		<?php endwhile; ?>
+	</div>
+</div>
+</div>
+<?php endif; ?>
+
+
+
 <!-- Bucket Panels-->
 <?php if ( have_rows( 'bucket_detail' ) ): ?>
 	<?php while ( have_rows( 'bucket_detail' ) ) : the_row();
@@ -97,8 +136,39 @@
 </div>
 </div>
 <?php endif; ?>
-<!-- Testimonial -->
 
+
+
+
+    <!-- Setup Steps -->
+<div class="panel-wide">
+	    <h2 class="text-center caps">Super Easy Setup</h2>
+    <p class="tagline text-center">Simply connect your phone, laptop or other device to any of our products over WiFi and thatâ€™s it! </p>
+<?php if ( have_rows( 'setup_steps' ) ): ?>
+	<div class="container">
+		<div class="row">
+			<?php while ( have_rows( 'setup_steps' ) ) : the_row();
+			$image = get_sub_field( 'image' );
+			$title = get_sub_field( 'title' );
+			$content = get_sub_field( 'content' );
+			$badge = get_sub_field( 'badge' );
+			?>
+			<div class="col">
+				<div class="bucket bucket-steps">
+<img src="<?php echo $image; ?>" alt="" class="rounded-circle">
+					<h3><?php echo $title; ?></h3>
+					<p><?php echo $content; ?></p>
+					<h5><span class="badge badge-default"><?php echo $badge; ?></span></h5>
+				</div>
+			</div>
+		<?php endwhile; ?>
+	</div>
+</div>
+</div>
+<?php endif; ?>
+</div>
+
+<!-- Testimonial -->
 <div class="panel-testimonial">
         <div class="container">
             <div class="row justify-content-center">
@@ -110,6 +180,7 @@
             </div>
         </div>
     </div>
+
 
 
 

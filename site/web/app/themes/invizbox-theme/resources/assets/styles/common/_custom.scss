@@ -1,14 +1,12 @@
 $color-primary: #ffd900;
 $color-black: #2a2b2c;
 $color-grey: whitesmoke;
-
 body {
   font-size: 16px;
   color: $color-black;
+  color: red;
   padding-top: 3.5rem;
 }
-
-
 
 
 /* ---------------------- Typography ---------------------- */
@@ -55,8 +53,6 @@ hr.small {
 }
 
 
-
-
 /* ---------------------- Navigation ---------------------- */
 
 .navbar-inverse .navbar-nav {
@@ -68,8 +64,6 @@ hr.small {
     border-radius: 2px;
   }
 }
-
-
 
 
 /* ---------------------- Buckets ---------------------- */
@@ -108,8 +102,6 @@ hr.small {
 }
 
 
-
-
 /* ---------------------- Feature Panels ---------------------- */
 
 .media {
@@ -121,8 +113,6 @@ hr.small {
     width: 64px;
   }
 }
-
-
 
 
 /* ---------------------- Panels ---------------------- */
@@ -150,8 +140,6 @@ hr.small {
 }
 
 
-
-
 /* ---------------------- Bucket Detail ---------------------- */
 
 .bucket-detail {
@@ -172,8 +160,6 @@ hr.small {
     display: inline-block;
   }
 }
-
-
 
 
 /* ---------------------- Jumbotron ---------------------- */
@@ -218,8 +204,6 @@ hr.small {
 }
 
 
-
-
 /* ---------------------- Pricing Panel ---------------------- */
 
 .pricing-panel {
@@ -244,29 +228,25 @@ hr.small {
   img {
     vertical-align: middle;
     height: 250px;
-    width: 180px;
+    width: auto;
     margin-bottom: 1rem;
   }
   .sale-tag {
     background: red;
     color: white;
     position: absolute;
-    top: 0;
-    right: 0;
-    padding: 0.5rem 1rem;
+    top: -1.5rem;
+    padding: 0.5rem;
+    margin-left: -1.5rem;
   }
   .btn {
     margin: 1rem 0;
   }
-  table {
-    margin: 2rem 0;
-    width: 100%;
-    tr {
-      text-align: left;
-      border-top: solid 1px #d0d0d0;
-      td {
-        padding: 1rem 0;
-      }
+  .bullets {
+    p {
+      border-bottom: solid 1px $color-grey;
+      line-height: 3rem;
+      margin: 0;
     }
   }
 }
@@ -279,8 +259,6 @@ hr.small {
     background: none;
   }
 }
-
-
 
 
 /* ---------------------- Product Hero ---------------------- */
@@ -298,8 +276,6 @@ hr.small {
 }
 
 
-
-
 /* ---------------------- Product Hero ---------------------- */
 
 .product-shot-main {
@@ -311,8 +287,6 @@ hr.small {
     margin-top: 2rem;
   }
 }
-
-
 
 
 /* ---------------------- Product Box ---------------------- */
@@ -338,8 +312,6 @@ hr.small {
     vertical-align: middle;
   }
 }
-
-
 
 
 /* ---------------------- Buttons ---------------------- */
@@ -372,8 +344,6 @@ hr.small {
 }
 
 
-
-
 /* ---------------------- Login ---------------------- */
 
 .form-signin {
@@ -392,8 +362,6 @@ hr.small {
     margin-bottom: 16px;
   }
 }
-
-
 
 
 /* ---------------------- Product Page ---------------------- */
@@ -450,34 +418,26 @@ hr.small {
 }
 
 
-
-
 /* ---------------------- Footer ---------------------- */
 
 footer {
-  background: $color-black;
   color: white;
   padding: 4rem 0 8rem;
+  background: $color-black;
   .form-group {
     display: inline-block;
   }
-  .social-icons {
-    color: white;
-    font-size: 2rem;
-    line-height: 0;
-    i {
-      margin: 0 0.25rem;
-    }
+  .style-svg {
+    fill: white;
+    height: 2rem;
+    width: auto;
   }
-
   h5 {
     font-size: 0.75rem;
     text-transform: uppercase;
     opacity: 0.65;
     margin-bottom: 2rem;
   }
-
-
   .menu {
     padding-left: 0;
     list-style: none;
@@ -493,8 +453,6 @@ footer {
     opacity: 0.5;
   }
 }
-
-
 
 
 /* ---------------------- Media Queries ---------------------- */

@@ -4,14 +4,14 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "67022886ebc13615a0e39125aa91d4b2",
+    "content-hash": "121f217c93019abf6c25c8e2db7cff86",
     "packages": [
         {
             "name": "advanced-custom-fields/advanced-custom-fields-pro",
-            "version": "5.3.8",
+            "version": "5.6.7",
             "dist": {
                 "type": "zip",
-                "url": "https://connect.advancedcustomfields.com/index.php?p=pro&a=download&t=5.3.8",
+                "url": "https://connect.advancedcustomfields.com/index.php?p=pro&a=download&t=5.6.7",
                 "reference": null,
                 "shasum": null
             },
@@ -513,6 +513,90 @@
             "homepage": "https://wordpress.org/plugins/contact-form-7/"
         },
         {
+            "name": "wpackagist-plugin/duplicate-page",
+            "version": "dev-trunk",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/duplicate-page/",
+                "reference": "trunk"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/duplicate-page.zip?timestamp=1512132276",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/duplicate-page/",
+            "time": "2017-12-01T12:44:36+00:00"
+        },
+        {
+            "name": "wpackagist-plugin/font-awesome",
+            "version": "dev-trunk",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/font-awesome/",
+                "reference": "trunk"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/font-awesome.zip?timestamp=1374697569",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/font-awesome/",
+            "time": "2013-07-24T21:26:09+00:00"
+        },
+        {
+            "name": "wpackagist-plugin/mailchimp-for-wp",
+            "version": "dev-trunk",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/mailchimp-for-wp/",
+                "reference": "trunk"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/mailchimp-for-wp.zip?timestamp=1514448589",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/mailchimp-for-wp/",
+            "time": "2017-12-28T08:09:49+00:00"
+        },
+        {
+            "name": "wpackagist-plugin/svg-support",
+            "version": "dev-trunk",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/svg-support/",
+                "reference": "trunk"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/svg-support.zip?timestamp=1504637725",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/svg-support/",
+            "time": "2017-09-05T19:55:25+00:00"
+        },
+        {
             "name": "wpackagist-plugin/testimonials-by-woothemes",
             "version": "dev-trunk",
             "source": {
@@ -611,7 +695,11 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "wpackagist-plugin/akismet": 20,
-        "wpackagist-plugin/testimonials-by-woothemes": 20
+        "wpackagist-plugin/testimonials-by-woothemes": 20,
+        "wpackagist-plugin/duplicate-page": 20,
+        "wpackagist-plugin/mailchimp-for-wp": 20,
+        "wpackagist-plugin/font-awesome": 20,
+        "wpackagist-plugin/svg-support": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,

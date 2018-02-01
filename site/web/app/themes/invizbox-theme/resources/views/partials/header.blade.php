@@ -10,6 +10,7 @@
 <div class="collapse navbar-collapse" id="navbarSupportedContent">
  @if (has_nav_menu('primary_navigation'))
  {!! wp_nav_menu(['theme_location' => 'primary_navigation', 'walker' => new wp_bootstrap_navwalker(), 'menu_class' => 'navbar-nav nav pull-right']) !!}
+<a href="" class="nav-link nav-shop">Store</a>
  @endif
  </div>
  </nav>
