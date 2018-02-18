@@ -12,7 +12,7 @@
 		<div class="col-sm-10 text-center">
 			<img src="<?php the_field( 'image_product' ); ?>" alt="" class="align-self-center">
 			<p>
-				<a href="store-invizbox-go.html" class="btn btn-secondary btn-lg btn-cta">Order Now</a>
+				<a href="<?php the_field( 'button_cta' ); ?>" class="btn btn-secondary btn-lg btn-cta">Order Now</a>
 			</p>
 			<h2><?php the_field( 'intro_title' ); ?></h2>
 			<p class="tagline"><?php the_field( 'intro_text' ); ?></p>

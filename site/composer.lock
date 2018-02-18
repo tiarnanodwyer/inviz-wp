@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "48e6f5dc365fefe09de6362b37fb3f7d",
+    "content-hash": "3badf130904de0d239b347b502740903",
     "packages": [
         {
             "name": "advanced-custom-fields/advanced-custom-fields-pro",
@@ -642,6 +642,27 @@
             "time": "2018-01-31T09:59:27+00:00"
         },
         {
+            "name": "wpackagist-plugin/woocommerce-menu-bar-cart",
+            "version": "dev-trunk",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/woocommerce-menu-bar-cart/",
+                "reference": "trunk"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/woocommerce-menu-bar-cart.zip?timestamp=1513604156",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/woocommerce-menu-bar-cart/",
+            "time": "2017-12-18T13:35:56+00:00"
+        },
+        {
             "name": "wpackagist-plugin/wp-migrate-db",
             "version": "1.0.2",
             "source": {
@@ -724,7 +745,8 @@
         "wpackagist-plugin/mailchimp-for-wp": 20,
         "wpackagist-plugin/font-awesome": 20,
         "wpackagist-plugin/svg-support": 20,
-        "wpackagist-plugin/woocommerce": 20
+        "wpackagist-plugin/woocommerce": 20,
+        "wpackagist-plugin/woocommerce-menu-bar-cart": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,

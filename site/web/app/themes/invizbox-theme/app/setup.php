@@ -28,6 +28,7 @@ add_action('after_setup_theme', function () {
     add_theme_support('soil-nav-walker');
     add_theme_support('soil-nice-search');
     add_theme_support('soil-relative-urls');
+    add_theme_support('woocommerce');
 
     /**
      * Enable plugins to manage the document title
@@ -68,6 +69,7 @@ add_action('after_setup_theme', function () {
      */
     add_editor_style(asset_path('styles/main.css'));
 }, 20);
+
 
 /**
  * Register sidebars
@@ -127,3 +129,5 @@ add_action('after_setup_theme', function () {
         return "<?= " . __NAMESPACE__ . "\\asset_path({$asset}); ?>";
     });
 });
+
+

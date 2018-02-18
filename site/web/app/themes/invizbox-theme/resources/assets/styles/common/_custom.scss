@@ -5,8 +5,9 @@ body {
   font-size: 16px;
   color: $color-black;
   color: red;
-  padding-top: 3.5rem;
+  padding-top: 40px;
 }
+
 
 
 /* ---------------------- Typography ---------------------- */
@@ -53,6 +54,7 @@ hr.small {
 }
 
 
+
 /* ---------------------- Navigation ---------------------- */
 
 .navbar-inverse .navbar-nav {
@@ -64,6 +66,7 @@ hr.small {
     border-radius: 2px;
   }
 }
+
 
 
 /* ---------------------- Buckets ---------------------- */
@@ -102,6 +105,7 @@ hr.small {
 }
 
 
+
 /* ---------------------- Feature Panels ---------------------- */
 
 .media {
@@ -113,6 +117,7 @@ hr.small {
     width: 64px;
   }
 }
+
 
 
 /* ---------------------- Panels ---------------------- */
@@ -140,6 +145,7 @@ hr.small {
 }
 
 
+
 /* ---------------------- Bucket Detail ---------------------- */
 
 .bucket-detail {
@@ -160,6 +166,7 @@ hr.small {
     display: inline-block;
   }
 }
+
 
 
 /* ---------------------- Jumbotron ---------------------- */
@@ -202,6 +209,7 @@ hr.small {
     }
   }
 }
+
 
 
 /* ---------------------- Pricing Panel ---------------------- */
@@ -261,6 +269,7 @@ hr.small {
 }
 
 
+
 /* ---------------------- Product Hero ---------------------- */
 
 .accreditation {
@@ -276,6 +285,7 @@ hr.small {
 }
 
 
+
 /* ---------------------- Product Hero ---------------------- */
 
 .product-shot-main {
@@ -287,6 +297,7 @@ hr.small {
     margin-top: 2rem;
   }
 }
+
 
 
 /* ---------------------- Product Box ---------------------- */
@@ -312,6 +323,7 @@ hr.small {
     vertical-align: middle;
   }
 }
+
 
 
 /* ---------------------- Buttons ---------------------- */
@@ -344,6 +356,7 @@ hr.small {
 }
 
 
+
 /* ---------------------- Login ---------------------- */
 
 .form-signin {
@@ -362,6 +375,7 @@ hr.small {
     margin-bottom: 16px;
   }
 }
+
 
 
 /* ---------------------- Product Page ---------------------- */
@@ -418,6 +432,7 @@ hr.small {
 }
 
 
+
 /* ---------------------- Footer ---------------------- */
 
 footer {
@@ -452,6 +467,16 @@ footer {
     border-top: solid 1px rgba(255, 255, 255, 0.5);
     opacity: 0.5;
   }
+}
+
+
+
+/* ---------------------- Woo ---------------------- */
+
+.banner-refund {
+  background: red;
+  height: 164px;
+  line-height: 64px;
 }
 
 
