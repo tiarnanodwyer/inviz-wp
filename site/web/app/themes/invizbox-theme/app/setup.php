@@ -42,7 +42,9 @@ add_action('after_setup_theme', function () {
      */
     register_nav_menus([
         'primary_navigation' => __('Primary Navigation', 'sage'),
-        'secondary_navigation' => __('Secondary Navigation')
+        'secondary_navigation' => __('Secondary Navigation'),
+        'tertiary_navigation' => __('Tertiary Navigation'),
+        'quaternary_navigation' => __('Quaternary Navigation')
     ]);
 
     /**

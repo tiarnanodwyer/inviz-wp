@@ -6,7 +6,7 @@
 		</div>
 	</div>
 </section>
-<!-- Poduct Panel-->
+<!-- Product Panel-->
 <div class="product-shot-main"><div class="container">
 	<div class="row justify-content-md-center">
 		<div class="col-sm-10 text-center">
@@ -69,7 +69,7 @@
 			$url = get_sub_field( 'url' );
 			?>
 
-			<div class="col-sm-4 col-md-2">
+			<div class="col-sm-4">
 				<div class="accreditation">
 					<a href="<?php echo $url; ?>">
 						<img src="<?php echo $image; ?>" alt="">
@@ -142,7 +142,7 @@
 
     <!-- Setup Steps -->
 <div class="panel-wide">
-	    <h2 class="text-center caps">Super Easy Setup</h2>
+	    <h2 class="text-center">Super Easy Setup</h2>
     <p class="tagline text-center">Simply connect your phone, laptop or other device to any of our products over WiFi and thatâ€™s it! </p>
 <?php if ( have_rows( 'setup_steps' ) ): ?>
 	<div class="container">
@@ -153,12 +153,12 @@
 			$content = get_sub_field( 'content' );
 			$badge = get_sub_field( 'badge' );
 			?>
-			<div class="col">
+			<div class="col-sm-4">
 				<div class="bucket bucket-steps">
+					<!-- <h5><span class="badge badge-default"><?php echo $badge; ?></span></h5> -->
 <img src="<?php echo $image; ?>" alt="" class="rounded-circle">
 					<h3><?php echo $title; ?></h3>
-					<p><?php echo $content; ?></p>
-					<h5><span class="badge badge-default"><?php echo $badge; ?></span></h5>
+					<!-- <p><?php echo $content; ?></p> -->
 				</div>
 			</div>
 		<?php endwhile; ?>

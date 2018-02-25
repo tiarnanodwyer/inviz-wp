@@ -67,7 +67,9 @@
     "wpackagist-plugin/font-awesome": "dev-trunk",
     "wpackagist-plugin/svg-support": "dev-trunk",
     "wpackagist-plugin/woocommerce": "dev-trunk",
-    "wpackagist-plugin/woocommerce-menu-bar-cart": "dev-trunk"
+    "wpackagist-plugin/woocommerce-menu-bar-cart": "dev-trunk",
+    "wpackagist-plugin/woocommerce-direct-variation-link": "dev-trunk",
+    "wpackagist-plugin/wc-variations-radio-buttons": "dev-trunk"
 
   },
   "require-dev": {

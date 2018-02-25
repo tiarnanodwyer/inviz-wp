@@ -52,6 +52,21 @@ array_map(function ($file) use ($sage_error) {
         $sage_error(sprintf(__('Error locating <code>%s</code> for inclusion.', 'sage'), $file), 'File not found');
     }
 }, ['helpers', 'setup', 'filters', 'admin', 'wp_bootstrap_navwalker']);
+
+/**
+ * Woo Commerce
+ *
+ * Remove Tabs
+ */
+
+add_filter( 'woocommerce_product_tabs', 'woo_remove_product_tabs', 98 );
+
+function woo_remove_product_tabs( $tabs ) {
+    // unset( $tabs['additional_information'] ); 
+    return $tabs;
+
+}
+
 /**
  * Here's what's happening with these hooks:
  * 1. WordPress initially detects theme in themes/sage/resources

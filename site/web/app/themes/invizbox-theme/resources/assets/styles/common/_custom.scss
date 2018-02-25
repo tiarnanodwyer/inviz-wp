@@ -1,12 +1,23 @@
-$color-primary: #ffd900;
-$color-black: #2a2b2c;
-$color-grey: whitesmoke;
 body {
   font-size: 16px;
   color: $color-black;
-  color: red;
-  padding-top: 40px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -29,8 +40,8 @@ h2 {
 
 h2.sub {
   font-size: 1.75rem;
-  margin: 5rem 0 2rem;
-  font-weight: 700;
+  margin: 6rem 0 4rem;
+  font-weight: 600;
 }
 
 p.tagline {
@@ -40,11 +51,11 @@ p.tagline {
 }
 
 p.lead {
-  margin: 1rem 0;
   color: white !important;
-  font-size: 1.25rem;
-  line-height: 2rem;
   opacity: 0.6;
+  font-size: 1.75rem;
+  line-height: 2.25rem;
+  margin: 1rem 0 1.75rem;
 }
 
 hr.small {
@@ -55,17 +66,83 @@ hr.small {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* ---------------------- Navigation ---------------------- */
 
-.navbar-inverse .navbar-nav {
-  .nav-shop {
-    background: $color-primary;
-    color: $color-black;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    border-radius: 2px;
+.navbar {
+  background: none;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  .navbar-brand {
+    background-image: url("../assets/images/logo-invizbox-w.png");
+    height: 50px;
+    width: 240px;
+    background-repeat: no-repeat;
+    padding: 0;
+  }
+  .nav-link,
+  .banner .nav a {
+    display: block;
+    padding: 1rem;
+  }
+  &.scrolled {
+    background: white !important;
+    border-bottom: solid 1px $color-border;
+    transition: 0.4s;
+    box-shadow: 0 3px 3px rgba($color-black, 0.05);
+    padding-top: 0;
+    padding-bottom: 0;
+    .navbar-brand {
+      background-image: url("../assets/images/logo-invizbox.png");
+    }
+    .nav-link {
+      color: $color-black;
+    }
+  }
+  .wpmenucart-display-standard {
+    padding: 1rem;
+  }
+  .wpmenucart-contents {
+    padding: 0.25rem 1rem !important;
+    background: $color-green;
+    color: white;
+    &:hover {
+      background: lighten($color-green, 10%);
+      text-decoration: none;
+    }
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -77,7 +154,6 @@ hr.small {
   img {
     width: 50px;
     margin-bottom: 1rem;
-    opacity: 0.5;
   }
   h3 {
     font-size: 1rem;
@@ -94,24 +170,44 @@ hr.small {
   text-align: center;
   padding: 0 2rem;
   img {
-    width: 100px;
     margin-bottom: 1rem;
-    opacity: 0.5;
+    width: 85%;
+  }
+  h3 {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
   }
   .badge {
-    background: $color-black;
-    color: white;
+    background: $color-primary;
+    color: $color-black;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 /* ---------------------- Feature Panels ---------------------- */
 
 .media {
-  margin: 2rem 0;
+  margin: 4rem 0 0;
   h5 {
     font-size: 1.15rem;
+    font-weight: 600;
   }
   img {
     width: 64px;
@@ -120,29 +216,98 @@ hr.small {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* ---------------------- Panels ---------------------- */
 
 .panel-wide {
   background: whitesmoke;
-  margin: 4rem 0 0;
-  padding: 1rem 0 3rem;
+  margin: 0;
+  padding: 1rem 0 7rem;
   clear: both;
 }
 
 .panel-testimonial {
-  background: #c5c5c5;
+  background: darken($color-primary, 10%);
   padding: 4rem 0;
   margin: 0;
-  p.testimonial {
-    font-size: 1.25rem;
-    clear: both;
+  color: white;
+  blockquote {
+    display: inline;
+    width: 70%;
+  }
+  p {
+    font-size: 1.5rem;
+    width: 70%;
+    display: inline-block;
   }
   img {
     float: left;
-    max-height: 100px;
     margin: 0 2rem 2rem 0;
+    border: solid 2px white;
+    width: 20%;
+    height: auto;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ---------------------- Panel Open Source ---------------------- */
+
+.panel-open-source {
+  background: $color-black;
+  color: white;
+  padding: 2.5rem 0 0;
+
+  p.tagline {
+    color: $color-primary;
+    margin: 2rem 0 4rem;
+  }
+
+  .media-body {
+    img {
+      float: left;
+      margin-left: -40px;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -161,11 +326,26 @@ hr.small {
     }
   }
   img {
-    width: 100%;
     margin: 4rem auto;
     display: inline-block;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -175,13 +355,17 @@ hr.small {
   background: $color-black;
   border-radius: 0;
   background-repeat: no-repeat;
-  background-position: 25% center;
-  background-size: cover;
+  background-position: top right;
+  padding: 0;
+  margin-bottom: 0;
   .jumbotron-detail {
-    text-align: center;
-    padding: 2.5rem 0 1rem;
+    text-align: left;
+    padding: 0;
+    max-width: 600px;
     h1 {
       color: white;
+      font-size: 4rem;
+      line-height: 5rem;
     }
     .bucket {
       display: inline-block;
@@ -198,17 +382,82 @@ hr.small {
   }
   .jumbotron-detail-product {
     text-align: center;
-    padding: 7.5rem 2rem 8rem;
+    padding: 12rem 2rem 10rem;
     h1 {
       color: white;
       font-size: 2.5rem;
     }
     p.lead {
-      font-size: 1.5rem;
-      margin: 1rem 0 2rem;
+      font-size: 1.75rem;
+      line-height: 2.25rem;
+      margin: 1.5rem 0 2rem;
     }
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ---------------------- Homepage ---------------------- */
+
+.products-panel-holder {
+  .products-panel {
+    padding: 0 3.5rem 5rem;
+    img {
+      width: 85%;
+      margin: 2rem 0;
+    }
+    h5 {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      color: $color-primary;
+    }
+    p {
+      font-size: 1.1rem;
+      line-height: 2.25rem;
+      margin-bottom: 1rem;
+    }
+    .product-tag {
+      font-size: 1.35rem;
+      font-weight: 600;
+    }
+    a {
+      margin-top: 1rem;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -270,19 +519,58 @@ hr.small {
 
 
 
-/* ---------------------- Product Hero ---------------------- */
 
-.accreditation {
-  text-align: center;
-  img {
-    width: 100%;
-    max-width: 120px;
-    margin: 2rem 0;
-  }
-  p {
-    font-size: 1.1rem;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ---------------------- Featured On Panel ---------------------- */
+
+.panel-featured-on {
+  background: $color-primary;
+  padding-bottom: 7rem;
+  color: white;
+  .accreditation {
+    text-align: center;
+    img {
+      width: 80%;
+      margin: 1rem 0 0;
+    }
+    p {
+      font-size: 1.1rem;
+    }
+    a {
+      color: white;
+    }
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -297,6 +585,22 @@ hr.small {
     margin-top: 2rem;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -326,12 +630,43 @@ hr.small {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* ---------------------- Buttons ---------------------- */
 
-.btn-primary {
-  background: green;
-  border-color: green;
+.btn {
+  border-radius: 2px;
+  font-size: 1rem;
+  padding: 0.5rem 1.25rem;
 }
+
+.btn-primary {
+  background: $color-highlight;
+  border-color: $color-highlight;
+}
+
+
+.btn-secondary {
+  background: white;
+  border-color: rgba($color-black, 0.35);
+  color: $color-black;
+}
+
+
 
 .btn-cta {
   background: $color-primary;
@@ -357,6 +692,22 @@ hr.small {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* ---------------------- Login ---------------------- */
 
 .form-signin {
@@ -375,6 +726,22 @@ hr.small {
     margin-bottom: 16px;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -433,18 +800,34 @@ hr.small {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* ---------------------- Footer ---------------------- */
 
 footer {
-  color: white;
+  color: $color-black;
   padding: 4rem 0 8rem;
-  background: $color-black;
+  background: $color-grey;
   .form-group {
     display: inline-block;
   }
   .style-svg {
-    fill: white;
-    height: 2rem;
+    fill: $color-black;
+    height: $h-input-lg;
     width: auto;
   }
   h5 {
@@ -458,6 +841,9 @@ footer {
     list-style: none;
     li {
       margin-bottom: 1rem;
+      a {
+        color: $color-black;
+      }
     }
   }
   .footer-base {
@@ -471,13 +857,164 @@ footer {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ---------------------- Contact Form  ---------------------- */
+
+.wpcf7 {
+  label {
+    font-size: 1.25rem;
+    margin: 0;
+    font-weight: 500;
+  }
+  p {
+    margin: 0 0 0.5rem;
+  }
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    background-color: #fff;
+    height: $h-input-lg;
+    color: #000;
+    width: calc(100% - 120px);
+  }
+  input[type="submit"] {
+    height: $h-input-lg;
+    margin-left: -1px;
+    background: $color-primary;
+    color: white;
+    width: 120px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* ---------------------- Woo ---------------------- */
 
 .banner-refund {
-  background: red;
-  height: 164px;
-  line-height: 64px;
+  background: $color-grey;
+  height: 88px;
+  line-height: 88px;
+  margin-top: 56px;
+  font-weight: 600;
+  font-size: 16px;
+  img {
+    max-height: 40px;
+    width: auto;
+    margin-right: 16px;
+  }
 }
+
+.woocommerce {
+
+  .container {
+    margin-top: 1.5rem;
+  }
+  .navbar {
+    background: white !important;
+    border-bottom: solid 1px $color-border;
+    transition: 0.4s;
+    box-shadow: 0 3px 3px rgba($color-black, 0.05);
+    padding-top: 0;
+    padding-bottom: 0;
+    .navbar-brand {
+      background-image: url("../assets/images/logo-invizbox.png");
+    }
+    .nav-link {
+      color: $color-black;
+    }
+  }
+  .col-1,
+  .col-2 {
+    max-width: none;
+  }
+  /* ---------------------- Woo Product Page ---------------------- */
+  div.product p.price del,
+  div.product span.price del {
+    display: block;
+  }
+
+  .quantity .qty {
+    width: 3.631em;
+    text-align: center;
+    display: none;
+  }
+
+  div.product form.cart .button {
+    vertical-align: middle;
+    float: none;
+    display: block;
+    width: 50%;
+    height: 3rem;
+    margin: 0 auto;
+    background: $color-primary;
+  }
+
+
+  div.product p.price,
+  .product span.price {
+    color: $color-primary;
+    font-size: 1.25em;
+  }
+
+  span.onsale {
+    background: $color-highlight;
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    padding: 0;
+    font-size: 1.25rem;
+    top: 0;
+    left: 0;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* ---------------------- Media Queries ---------------------- */
@@ -509,7 +1046,7 @@ footer {
     line-height: 3.75rem;
   }
   h2 {
-    font-size: 2.5rem;
+    font-size: 3rem;
     margin: 5rem 0 2rem;
   }
   h2.caps {
@@ -518,13 +1055,9 @@ footer {
     margin-bottom: 0;
   }
   p.tagline {
-    font-size: 1.35rem;
-  }
-  p.lead {
-    margin: 1rem 0;
     font-size: 1.5rem;
-    line-height: 2rem;
   }
+
   /* ---------------------- Panels ---------------------- */
   .panel-testimonial {
     p.testimonial {
@@ -539,8 +1072,7 @@ footer {
       line-height: 2.5rem;
     }
     img {
-      height: 300px;
-      width: 80%;
+      max-height: 400px;
       margin: 4rem 0;
     }
   }
@@ -568,14 +1100,16 @@ footer {
   /* ---------------------- Jumbotron ---------------------- */
   .jumbotron {
     .jumbotron-detail {
-      padding: 5rem 2rem 3rem;
+      padding: 10rem 0;
     }
     .jumbotron-detail-product {
       h1 {
         font-size: 4rem;
+        line-height: 5rem;
       }
       p.lead {
-        font-size: 2rem;
+        font-size: 1.75rem;
+        line-height: 2.75rem;
         margin: 1rem 0 2rem;
       }
     }
