@@ -66,6 +66,28 @@ function woo_remove_product_tabs( $tabs ) {
     return $tabs;
 
 }
+/**
+ * Show IPs
+ */
+
+function get_the_user_ip()
+{
+    if (!empty($_SERVER['HTTP_CLIENT_IP'])) {
+        //check ip from share internet
+        $ip = $_SERVER['HTTP_CLIENT_IP'];
+    } elseif (!empty($_SERVER['HTTP_X_FORWARDED_FOR'])) {
+        //to check ip is pass from proxy
+        $ip = $_SERVER['HTTP_X_FORWARDED_FOR'];
+    } else {
+        $ip = $_SERVER['REMOTE_ADDR'];
+    }
+    return apply_filters('wpb_get_ip', $ip);
+}
+
+//this creates the shortcode you can use in posts, pages and widgets
+add_shortcode('show_user_ip', 'get_the_user_ip');
+
+
 
 /**
  * Here's what's happening with these hooks:

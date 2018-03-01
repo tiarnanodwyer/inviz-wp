@@ -21,6 +21,12 @@ body {
 
 
 
+
+
+
+
+
+
 /* ---------------------- Typography ---------------------- */
 
 .h1,
@@ -63,6 +69,12 @@ hr.small {
   margin: 3rem auto;
   width: 4rem;
 }
+
+
+
+
+
+
 
 
 
@@ -146,6 +158,12 @@ hr.small {
 
 
 
+
+
+
+
+
+
 /* ---------------------- Buckets ---------------------- */
 
 .bucket {
@@ -201,6 +219,12 @@ hr.small {
 
 
 
+
+
+
+
+
+
 /* ---------------------- Feature Panels ---------------------- */
 
 .media {
@@ -213,6 +237,12 @@ hr.small {
     width: 64px;
   }
 }
+
+
+
+
+
+
 
 
 
@@ -279,6 +309,12 @@ hr.small {
 
 
 
+
+
+
+
+
+
 /* ---------------------- Panel Open Source ---------------------- */
 
 .panel-open-source {
@@ -311,6 +347,12 @@ hr.small {
 
 
 
+
+
+
+
+
+
 /* ---------------------- Bucket Detail ---------------------- */
 
 .bucket-detail {
@@ -330,6 +372,12 @@ hr.small {
     display: inline-block;
   }
 }
+
+
+
+
+
+
 
 
 
@@ -413,6 +461,12 @@ hr.small {
 
 
 
+
+
+
+
+
+
 /* ---------------------- Homepage ---------------------- */
 
 .products-panel-holder {
@@ -423,10 +477,13 @@ hr.small {
       margin: 2rem 0;
     }
     h5 {
-      font-size: 2rem;
+
+      color: $color-black;
+      font-size: 2.5rem;
+      line-height: 3rem;
+      margin-top: 1rem;
       font-weight: 700;
       margin-bottom: 1rem;
-      color: $color-primary;
     }
     p {
       font-size: 1.1rem;
@@ -442,6 +499,12 @@ hr.small {
     }
   }
 }
+
+
+
+
+
+
 
 
 
@@ -526,6 +589,24 @@ hr.small {
 
 
 
+/* ---------------------- Featured On Panel ---------------------- */
+
+.ip-address p {
+  width: 100%;
+  background: #fffce0;
+  text-align: center;
+  font-size: 1rem;
+  line-height: 3rem;
+  color: #3e362d;
+  display: inline-block;
+  font-weight: 400;
+}
+
+
+
+
+
+
 
 
 
@@ -539,14 +620,20 @@ hr.small {
 
 .panel-featured-on {
   background: $color-primary;
-  padding-bottom: 7rem;
+  padding-bottom: 4rem;
   color: white;
+  h2.sub {
+    font-size: 1.5rem;
+    margin: 3rem 0 1rem;
+    font-weight: 400;
+  }
   .accreditation {
     text-align: center;
     img {
       width: 80%;
       margin: 1rem 0 0;
     }
+
     p {
       font-size: 1.1rem;
     }
@@ -555,6 +642,12 @@ hr.small {
     }
   }
 }
+
+
+
+
+
+
 
 
 
@@ -604,6 +697,12 @@ hr.small {
 
 
 
+
+
+
+
+
+
 /* ---------------------- Product Box ---------------------- */
 
 .product-box {
@@ -627,6 +726,12 @@ hr.small {
     vertical-align: middle;
   }
 }
+
+
+
+
+
+
 
 
 
@@ -708,6 +813,12 @@ hr.small {
 
 
 
+
+
+
+
+
+
 /* ---------------------- Login ---------------------- */
 
 .form-signin {
@@ -726,6 +837,12 @@ hr.small {
     margin-bottom: 16px;
   }
 }
+
+
+
+
+
+
 
 
 
@@ -816,6 +933,12 @@ hr.small {
 
 
 
+
+
+
+
+
+
 /* ---------------------- Footer ---------------------- */
 
 footer {
@@ -873,6 +996,12 @@ footer {
 
 
 
+
+
+
+
+
+
 /* ---------------------- Contact Form  ---------------------- */
 
 .wpcf7 {
@@ -900,6 +1029,12 @@ footer {
     width: 120px;
   }
 }
+
+
+
+
+
+
 
 
 
@@ -998,6 +1133,12 @@ footer {
     left: 0;
   }
 }
+
+
+
+
+
+
 
 
 

@@ -7,4 +7,4 @@ vault_wordpress_sites:
   invizbox.com:
     admin_password: "AYDnttz7&KRfN3#+C5rSaY5+"
     env:
-    db_password: "rEk#W$q&C+59A3jAyF4MQWZp"
+      db_password: "rEk#W$q&C+59A3jAyF4MQWZp"
