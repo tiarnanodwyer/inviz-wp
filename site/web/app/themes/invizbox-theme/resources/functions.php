@@ -65,7 +65,7 @@ function woo_remove_product_tabs( $tabs ) {
     // unset( $tabs['additional_information'] ); 
     return $tabs;
 
-}
+};
 
 /**
  * Here's what's happening with these hooks:

@@ -40,7 +40,7 @@ h2 {
 
 h2.sub {
   font-size: 1.75rem;
-  margin: 6rem 0 4rem;
+  margin: 3rem 0 1rem;
   font-weight: 600;
 }
 
@@ -287,7 +287,7 @@ hr.small {
   padding: 2.5rem 0 0;
 
   p.tagline {
-    color: $color-primary;
+    color: lighten($color-primary, 45);
     margin: 2rem 0 4rem;
   }
 
@@ -295,6 +295,9 @@ hr.small {
     img {
       float: left;
       margin-left: -40px;
+    }
+    p {
+      color: lighten($color-primary, 45);
     }
   }
 }
@@ -352,22 +355,39 @@ hr.small {
 /* ---------------------- Jumbotron ---------------------- */
 
 .jumbotron {
-  background: $color-black;
+  background-color: $color-black;
   border-radius: 0;
   background-repeat: no-repeat;
   background-position: top right;
   padding: 0;
   margin-bottom: 0;
+  background-size: 0, 0 !important;
+  .jumbotron-notification {
+    background: yellow;
+    text-align: center;
+    max-width: 80%;
+    width: auto;
+    position: absolute;
+    top: 7rem;
+    margin: 0 auto;
+    display: inline-block;
+    padding: 0.5rem 2rem;
+  }
   .jumbotron-detail {
     text-align: left;
-    padding: 0;
     max-width: 600px;
+    padding: 8rem 0;
     h1 {
       color: white;
-      font-size: 4rem;
-      line-height: 5rem;
+      font-size: 2.75rem;
+      line-height: 3.75rem;
     }
-    .bucket {
+    p.lead {
+      font-size: 1.35rem;
+      line-height: 2rem;
+      opacity: 0.8;
+    }
+    /*  .bucket {
       display: inline-block;
       margin: 0 1rem;
       a {
@@ -378,6 +398,10 @@ hr.small {
         width: 100px;
         height: 60px;
       }
+    } */
+
+    .btn {
+      padding: 0.75rem 1.25rem;
     }
   }
   .jumbotron-detail-product {
@@ -417,20 +441,19 @@ hr.small {
 
 .products-panel-holder {
   .products-panel {
-    padding: 0 3.5rem 5rem;
+    padding: 0 2.5rem 5rem;
     img {
-      width: 85%;
+      width: 100%;
       margin: 2rem 0;
     }
     h5 {
-      font-size: 2rem;
+      font-size: 2.25rem;
       font-weight: 700;
       margin-bottom: 1rem;
-      color: $color-primary;
     }
     p {
-      font-size: 1.1rem;
-      line-height: 2.25rem;
+      font-size: 1.15rem;
+      line-height: 2rem;
       margin-bottom: 1rem;
     }
     .product-tag {
@@ -443,7 +466,14 @@ hr.small {
   }
 }
 
-
+.ip-address {
+  background: $color-notification;
+  color: $color-highlight;
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+  padding: 0.25rem;
+}
 
 
 
@@ -538,9 +568,9 @@ hr.small {
 /* ---------------------- Featured On Panel ---------------------- */
 
 .panel-featured-on {
-  background: $color-primary;
-  padding-bottom: 7rem;
-  color: white;
+  background: rgba($color-primary, 0.2);
+  padding-bottom: 4rem;
+
   .accreditation {
     text-align: center;
     img {
@@ -551,7 +581,7 @@ hr.small {
       font-size: 1.1rem;
     }
     a {
-      color: white;
+      color: $color-black;
     }
   }
 }
@@ -936,7 +966,7 @@ footer {
 }
 
 .woocommerce {
-
+  border: solid 1px red;
   .container {
     margin-top: 1.5rem;
   }
@@ -1046,8 +1076,8 @@ footer {
     line-height: 3.75rem;
   }
   h2 {
-    font-size: 3rem;
-    margin: 5rem 0 2rem;
+    font-size: 2.75rem;
+    margin: 3rem 0 1.5rem;
   }
   h2.caps {
     font-size: 1.25rem;
@@ -1099,8 +1129,16 @@ footer {
   }
   /* ---------------------- Jumbotron ---------------------- */
   .jumbotron {
+    background-size: auto !important;
     .jumbotron-detail {
       padding: 10rem 0;
+      h1 {
+        font-size: 4rem;
+        line-height: 5rem;
+      }
+      p.lead {
+        font-size: 1.75rem;
+      }
     }
     .jumbotron-detail-product {
       h1 {
