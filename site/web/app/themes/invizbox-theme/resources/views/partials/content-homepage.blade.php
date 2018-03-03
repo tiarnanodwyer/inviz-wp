@@ -35,7 +35,7 @@
 				$link_learn = get_sub_field( 'link_learn' );
 				$link_order = get_sub_field( 'link_order' );
 				?>
-				<div class="col-sm-6" role="presentation"<?php 
+				<div class="col-md-6" role="presentation"<?php 
 				if (!$count) {
 					?> class="active"<?php 
 				}
@@ -45,7 +45,6 @@
 
 					<img src="<?php echo $image; ?>" alt="">
 					<h5><?php echo $title; ?></h5>
-					<!-- <p class="product-tag"><?php echo $tag; ?></p> -->
 					<p><?php echo $text; ?></p>
 					<a href="<?php echo $link_learn; ?>" class="btn btn-secondary">Learn More</a>
 					<a href="<?php echo $link_order; ?>" class="btn btn-primary">Order Now</a>
@@ -80,7 +79,7 @@
 				$text = get_sub_field( 'text' );
 				$image = get_sub_field( 'image' );
 				?>
-				<div class="col-sm-6 col-lg-4">
+				<div class="col-6 col-lg-4">
 					<div class="media">
 						<img class="mr-3" src="<?php echo $image; ?>" alt="">
 						<div class="media-body">
@@ -109,7 +108,7 @@
 				$title = get_sub_field( 'title' );
 				$url = get_sub_field( 'url' );
 				?>
-				<div class="col-sm-4">
+				<div class="col-4">
 					<div class="accreditation">
 						<a href="<?php echo $url; ?>">
 							<img src="<?php echo $image; ?>" alt="">
@@ -161,12 +160,12 @@
 		<div class="row">
 			<div class="col-sm-6">
 
-				<img src="<?= get_template_directory_uri(); ?>/assets/images/app-screens-cropped.png">
+				<img class="hero-image" src="<?= get_template_directory_uri(); ?>/assets/images/app-screens-cropped.png">
 
 			</div>
 			<div class="col-sm-6">
 				<div class="row">
-					<div class="col-sm-6">
+					<div class="col-6">
 
 						<div class="media-body">
 							<img src="<?= get_template_directory_uri(); ?>/assets/images/tick.png">
@@ -177,7 +176,7 @@
 
 
 					</div>
-					<div class="col-sm-6">
+					<div class="col-6">
 
 						<div class="media-body">
 							<img src="<?= get_template_directory_uri(); ?>/assets/images/tick.png">
@@ -188,7 +187,7 @@
 
 
 					</div>
-					<div class="col-sm-6">
+					<div class="col-6">
 
 						<div class="media-body">
 							<img src="<?= get_template_directory_uri(); ?>/assets/images/tick.png">
@@ -199,7 +198,7 @@
 
 
 					</div>
-					<div class="col-sm-6">
+					<div class="col-6">
 
 						<div class="media-body">
 							<img src="<?= get_template_directory_uri(); ?>/assets/images/tick.png">
