@@ -68,6 +68,28 @@ function woo_remove_product_tabs( $tabs ) {
 };
 
 
+
+// Display User IP in WordPress
+ 
+ 
+function get_the_user_ip() {
+if ( ! empty( $_SERVER['HTTP_CLIENT_IP'] ) ) {
+//check ip from share internet
+$ip = $_SERVER['HTTP_CLIENT_IP'];
+} elseif ( ! empty( $_SERVER['HTTP_X_FORWARDED_FOR'] ) ) {
+//to check ip is pass from proxy
+$ip = $_SERVER['HTTP_X_FORWARDED_FOR'];
+} else {
+$ip = $_SERVER['REMOTE_ADDR'];
+}
+return apply_filters( 'wpb_get_ip', $ip );
+}
+ 
+add_shortcode('show_ip', 'get_the_user_ip');
+
+
+
+
 /**
  * Here's what's happening with these hooks:
  * 1. WordPress initially detects theme in themes/sage/resources

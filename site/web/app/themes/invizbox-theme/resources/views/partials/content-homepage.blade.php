@@ -11,14 +11,12 @@
 		</div>
 	</div>
 </section>
-
-	<span class="ip-address" class="jumbotron-heading"><?php the_field( 'ip' ); ?></span>
-	<!-- Product Panel-->
+<span class="ip-address" class="jumbotron-heading"><?php the_field( 'ip' ); ?></span>
+<!-- Product Panel-->
 <div class="container">
-
-
-
-
+	<h2 class="text-center">Protect All your devices, everywhere!</h2>
+	<p class="tagline text-center">On the move or at home, InvizBox provides total security.
+	</p>
 	<div class="row products-panel-holder">
 		<?php 
 		if( have_rows('products') ):  
@@ -49,7 +47,6 @@
 	endwhile;
 	endif; 
 	?>
-
 </div>
 </div>
 <!-- Features Panel-->
@@ -68,9 +65,7 @@
 				$text = get_sub_field( 'text' );
 				$image = get_sub_field( 'image' );
 				?>
-
 				<div class="col-6 col-lg-4">
-
 					<div class="media">
 						<img class="mr-3" src="<?php echo $image; ?>" alt="">
 						<div class="media-body">
@@ -100,7 +95,6 @@
 				$url = get_sub_field( 'url' );
 				?>
 				<div class="col-4">
-
 					<div class="accreditation">
 						<a href="<?php echo $url; ?>">
 							<img src="<?php echo $image; ?>" alt="">
@@ -125,27 +119,23 @@
 	<div class="bucket-detail">
 		<div class="container">
 			<div class="row  row-eq-height">
-
 				<div class="col-sm-5">
 					<div class="bucket-image">
-											<img src="<?php echo $image; ?>" alt="">
+						<img src="<?php echo $image; ?>" alt="">
 					</div>
-
 				</div>
 				<div class="col-sm-7">
 					<div class="bucket-content">
-											<h2><?php echo $title; ?></h2>
-					<p  class="tagline"><?php echo $content; ?></p>
-					<a href="$link" class="btn btn-default">Learn More</a>
+						<h2><?php echo $title; ?></h2>
+						<p  class="tagline"><?php echo $content; ?></p>
+						<a href="$link" class="btn btn-default">Learn More</a>
 					</div>
-
 				</div>
 			</div>
 		</div>
 	</div>
 <?php endwhile; ?>
 <?php endif; ?>
-
 <!-- Open Source Panel -->
 <div class="panel-open-source">
 	<div class="container">
@@ -157,72 +147,59 @@
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-md-5">
+			<div class="col-md-6">
 				<img class="hero-image" src="<?= get_template_directory_uri(); ?>/assets/images/app-screens-cropped.png">
 			</div>
-			<div class="col-md-7">
+			<div class="col-md-6">
 				<div class="row">
 					<div class="col-6">
-
 						<div class="media-body">
 							<img src="<?= get_template_directory_uri(); ?>/assets/images/tick.png">
 							<h5 class="mt-0">Open Source</h5>
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi omnis eum.</p>
 						</div>
-
 					</div>
 					<div class="col-6">
-
 						<div class="media-body">
 							<img src="<?= get_template_directory_uri(); ?>/assets/images/tick.png">
 							<h5 class="mt-0">No Log VPN</h5>
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi omnis eum.</p>
 						</div>
-
 					</div>
 					<div class="col-6">
-
-
 						<div class="media-body">
 							<img src="<?= get_template_directory_uri(); ?>/assets/images/tick.png">
 							<h5 class="mt-0">Auto Updates</h5>
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi omnis eum.</p>
 						</div>
-
 					</div>
 					<div class="col-6">
-
 						<div class="media-body">
 							<img src="<?= get_template_directory_uri(); ?>/assets/images/tick.png">
 							<h5 class="mt-0">Secure HTTPS</h5>
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi omnis eum.</p>
 						</div>
-
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 </div>
-
 <!-- Setup Steps -->
 <div class="panel-wide">
 	<h2 class="text-center">Super Easy Setup</h2>
 	<p class="tagline text-center">Simply connect your phone, laptop or other device to any of our products over WiFi and that's it! </p>
-
 	<?php if ( have_rows( 'setup_steps' ) ): ?>
 	<div class="container">
 		<div class="row">
 			<?php while ( have_rows( 'setup_steps' ) ) : the_row();
 			$image = get_sub_field( 'image' );
-
 			$content = get_sub_field( 'content' );
 			?>
 			<div class="col-4">
 				<div class="bucket bucket-steps">
 					<img src="<?php echo $image; ?>" alt="">
 					<h3><?php echo $content; ?></h3>
-
 				</div>
 			</div>
 		<?php endwhile; ?>
@@ -247,4 +224,3 @@
 </div>
 </div>
 </div>
-
