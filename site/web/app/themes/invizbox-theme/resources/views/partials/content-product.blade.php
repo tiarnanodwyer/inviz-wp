@@ -1,8 +1,11 @@
 <section class="jumbotron" style="background-image: url(<?php the_field( 'jumbotron' ); ?>);">
 	<div class="container">
 		<div class="jumbotron-detail-product">
+			<p class="product"><?php single_post_title(); ?></p>
 			<h1 class="jumbotron-heading"><?php the_field( 'hero_title' ); ?></h1>
 			<p class="lead text-muted"><?php the_field( 'hero_tagline' ); ?></p>
+			<a href="<?php the_field( 'buy' ); ?>" class="btn btn-primary btn-lg btn-cta">Order Now</a>
+			<p class="guarantee">30-Day Money-Back Guarantee</p>
 		</div>
 	</div>
 </section>
@@ -11,11 +14,9 @@
 	<div class="row justify-content-md-center">
 		<div class="col-sm-12 text-center">
 			<img src="<?php the_field( 'image_product' ); ?>" alt="" class="align-self-center">
-
 			<h2><?php the_field( 'intro_title' ); ?></h2>
 			<p class="tagline"><?php the_field( 'intro_text' ); ?></p>
-							<a href="<?php the_field( 'buy' ); ?>" class="btn btn-primary btn-lg btn-cta">Order Now</a>
-
+			<a href="<?php the_field( 'buy' ); ?>" class="btn btn-primary btn-lg btn-cta">Order Now</a>
 		</div>
 	</div>
 </div></div>
@@ -23,7 +24,7 @@
 <?php if ( have_rows( 'features' ) ): ?>
 	<div class="panel-wide">
 		<div class="container">
-		<div class="row">
+			<div class="row">
 				<div class="col-12">
 					<h2 class="text-center">Packed full of features</h2>
 					<p class="tagline text-center"><?php the_field( 'intro_text' ); ?></p>
@@ -47,19 +48,8 @@
 			</div>
 		</div>
 	</div>
-	</div>
+</div>
 <?php endif; ?>
-
-
-
-
-
-
-
-
-
-
-
 <!-- Bucket Panels-->
 <?php if ( have_rows( 'bucket_detail' ) ): ?>
 	<?php while ( have_rows( 'bucket_detail' ) ) : the_row();
@@ -113,7 +103,6 @@
 </div>
 </div>
 <?php endif; ?>
-
 <!-- As Featured Panel-->
 <?php if ( have_rows( 'featured_on' ) ): ?>
 	<div class="panel-featured-on">
@@ -142,13 +131,11 @@
 	</div>
 </div>
 <?php endif; ?>
-
-
-    <!-- Setup Steps -->
+<!-- Setup Steps -->
 <div class="panel-wide">
-	    <h2 class="text-center">Super Easy Setup</h2>
-    <p class="tagline text-center">Simply connect your phone, laptop or other device to any of our products over WiFi and thatâ€™s it! </p>
-<?php if ( have_rows( 'setup_steps' ) ): ?>
+	<h2 class="text-center">Super Easy Setup</h2>
+	<p class="tagline text-center">Simply connect your phone, laptop or other device to any of our products over WiFi and thatâ€™s it! </p>
+	<?php if ( have_rows( 'setup_steps' ) ): ?>
 	<div class="container">
 		<div class="row">
 			<?php while ( have_rows( 'setup_steps' ) ) : the_row();
@@ -160,7 +147,7 @@
 			<div class="col-sm-4">
 				<div class="bucket bucket-steps">
 					<!-- <h5><span class="badge badge-default"><?php echo $badge; ?></span></h5> -->
-<img src="<?php echo $image; ?>" alt="" class="rounded-circle">
+					<img src="<?php echo $image; ?>" alt="" class="rounded-circle">
 					<h3><?php echo $title; ?></h3>
 					<!-- <p><?php echo $content; ?></p> -->
 				</div>
@@ -171,20 +158,13 @@
 </div>
 <?php endif; ?>
 </div>
-
 <!-- Testimonial -->
 <div class="panel-testimonial">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-8">
-
-                	<?php do_action( 'woothemes_testimonials', array( 'limit' => 1, 'category' => 'invizbox-pro' )  ); ?>
-
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-
-
+	<div class="container">
+		<div class="row justify-content-center">
+			<div class="col-8">
+				<?php do_action( 'woothemes_testimonials', array( 'limit' => 1, 'category' => 'invizbox-pro' )  ); ?>
+			</div>
+		</div>
+	</div>
+</div>
