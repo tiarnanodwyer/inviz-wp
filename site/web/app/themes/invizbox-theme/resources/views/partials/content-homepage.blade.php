@@ -11,16 +11,14 @@
 		</div>
 	</div>
 </section>
-<span class="ip-address" class="jumbotron-heading">Ip Address Goes here - Combo Deals!<?php the_field( 'ip' ); ?></span>
-<!-- Product Panel-->
+
+	<span class="ip-address" class="jumbotron-heading"><?php the_field( 'ip' ); ?></span>
+	<!-- Product Panel-->
 <div class="container">
-	<div class="row justify-content-md-center">
-		<div class="col-sm-12 text-center">
-			<h2><?php the_field( 'intro_title' ); ?></h2>
-			<p class="tagline"><?php the_field( 'intro_text' ); ?></p>
-		</div>
-	</div>
-	<!-- Products Panel-->
+
+
+
+
 	<div class="row products-panel-holder">
 		<?php 
 		if( have_rows('products') ):  
@@ -51,6 +49,7 @@
 	endwhile;
 	endif; 
 	?>
+
 </div>
 </div>
 <!-- Features Panel-->
@@ -69,7 +68,9 @@
 				$text = get_sub_field( 'text' );
 				$image = get_sub_field( 'image' );
 				?>
+
 				<div class="col-6 col-lg-4">
+
 					<div class="media">
 						<img class="mr-3" src="<?php echo $image; ?>" alt="">
 						<div class="media-body">
@@ -99,6 +100,7 @@
 				$url = get_sub_field( 'url' );
 				?>
 				<div class="col-4">
+
 					<div class="accreditation">
 						<a href="<?php echo $url; ?>">
 							<img src="<?php echo $image; ?>" alt="">
@@ -123,6 +125,7 @@
 	<div class="bucket-detail">
 		<div class="container">
 			<div class="row  row-eq-height">
+
 				<div class="col-sm-5">
 					<div class="bucket-image">
 											<img src="<?php echo $image; ?>" alt="">
@@ -142,6 +145,7 @@
 	</div>
 <?php endwhile; ?>
 <?php endif; ?>
+
 <!-- Open Source Panel -->
 <div class="panel-open-source">
 	<div class="container">
@@ -159,53 +163,66 @@
 			<div class="col-md-7">
 				<div class="row">
 					<div class="col-6">
+
 						<div class="media-body">
 							<img src="<?= get_template_directory_uri(); ?>/assets/images/tick.png">
 							<h5 class="mt-0">Open Source</h5>
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi omnis eum.</p>
 						</div>
+
 					</div>
 					<div class="col-6">
+
 						<div class="media-body">
 							<img src="<?= get_template_directory_uri(); ?>/assets/images/tick.png">
 							<h5 class="mt-0">No Log VPN</h5>
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi omnis eum.</p>
 						</div>
+
 					</div>
 					<div class="col-6">
+
+
 						<div class="media-body">
 							<img src="<?= get_template_directory_uri(); ?>/assets/images/tick.png">
 							<h5 class="mt-0">Auto Updates</h5>
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi omnis eum.</p>
 						</div>
+
 					</div>
 					<div class="col-6">
+
 						<div class="media-body">
 							<img src="<?= get_template_directory_uri(); ?>/assets/images/tick.png">
 							<h5 class="mt-0">Secure HTTPS</h5>
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi omnis eum.</p>
 						</div>
+
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 </div>
+
 <!-- Setup Steps -->
 <div class="panel-wide">
 	<h2 class="text-center">Super Easy Setup</h2>
 	<p class="tagline text-center">Simply connect your phone, laptop or other device to any of our products over WiFi and that's it! </p>
+
 	<?php if ( have_rows( 'setup_steps' ) ): ?>
 	<div class="container">
 		<div class="row">
 			<?php while ( have_rows( 'setup_steps' ) ) : the_row();
 			$image = get_sub_field( 'image' );
+
 			$content = get_sub_field( 'content' );
 			?>
 			<div class="col-4">
 				<div class="bucket bucket-steps">
 					<img src="<?php echo $image; ?>" alt="">
 					<h3><?php echo $content; ?></h3>
+
 				</div>
 			</div>
 		<?php endwhile; ?>
@@ -230,3 +247,4 @@
 </div>
 </div>
 </div>
+
