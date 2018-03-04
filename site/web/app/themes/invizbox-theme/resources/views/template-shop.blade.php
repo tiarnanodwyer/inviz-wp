@@ -2,7 +2,7 @@
   Template Name: Shop Template
 --}}
 
-@extends('layouts.app-wide')
+@extends('layouts.app-woo')
 
 @section('content')
   @while(have_posts()) @php(the_post())

@@ -28,13 +28,7 @@ wc_print_notices();
 
 
 do_action( 'woocommerce_before_cart' ); ?>
-    <div class="banner-refund">
-  <div class="row">
-    <div class="col-4 text-center"><img src="<?= get_template_directory_uri(); ?>/assets/images/icon-woo-shield.png">100% Secure</div>
-    <div class="col-4 text-center"><img src="<?= get_template_directory_uri(); ?>/assets/images/icon-woo-shipping.png">Free Shipping</div>
-    <div class="col-4"><img src="<?= get_template_directory_uri(); ?>/assets/images/icon-woo-calendar.png">30-Day Money Back Guarantee</div>
-  </div>
-</div>
+
 
 <form class="woocommerce-cart-form" action="<?php echo esc_url( wc_get_cart_url() ); ?>" method="post">
 	<?php do_action( 'woocommerce_before_cart_table' ); ?>

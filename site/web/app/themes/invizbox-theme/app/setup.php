@@ -28,7 +28,12 @@ add_action('after_setup_theme', function () {
     add_theme_support('soil-nav-walker');
     add_theme_support('soil-nice-search');
     add_theme_support('soil-relative-urls');
-    add_theme_support('woocommerce');
+    add_theme_support( 'woocommerce', array(
+    'thumbnail_image_width'         => 150,
+    'gallery_thumbnail_image_width' => 100,
+    'single_image_width'            => 500,
+) );
+
 
     /**
      * Enable plugins to manage the document title

@@ -62,13 +62,17 @@
 	<div class="bucket-detail">
 		<div class="container">
 			<div class="row  row-eq-height">
-				<div class="col-sm-5 bucket-image">
-					<img src="<?php echo $image; ?>" alt="">
+				<div class="col-sm-5">
+					<div class="bucket-image">
+						<img src="<?php echo $image; ?>" alt="">
+					</div>		
 				</div>
-				<div class="col-sm-7 bucket-content">
-					<h2><?php echo $title; ?></h2>
-					<p  class="tagline"><?php echo $content; ?></p>
-					<a href="$link" class="btn btn-default">Learn More</a>
+				<div class="col-sm-7">
+					<div class="bucket-content">
+						<h2><?php echo $title; ?></h2>
+						<p  class="tagline"><?php echo $content; ?></p>
+						<a href="$link" class="btn btn-default">Learn More</a>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -77,6 +81,7 @@
 <?php endif; ?>
 <!-- Pricing Panel-->
 <h2 class="text-center">Wide range of options</h2>
+<p class="tagline text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 <?php if ( have_rows( 'pricing_panel' ) ): ?>
 	<div class="container container-pricing">
 		<div class="row">
@@ -95,7 +100,7 @@
 					<p><?php echo $content; ?></p>
 					<p class="price"><?php echo $price; ?></p>
 					<p class="discount"><?php echo $discount; ?></p>
-					<a href="<?php echo $content; ?>" class="btn btn-cta btn-primary">Order Now</a>
+					<a href="<?php echo $link; ?>" class="btn btn-cta btn-primary">Order Now</a>
 				</div>
 			</div>
 		<?php endwhile; ?>
@@ -109,7 +114,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-12">
-					<h2 class="sub text-center">We've had some great support...</h2>
+					<h2 class="sub-capital text-center">PROUDLY RECOMMENDED BY:</h2>
 				</div>
 			</div>
 			<div class="row">

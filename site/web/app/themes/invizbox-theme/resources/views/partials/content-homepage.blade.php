@@ -89,7 +89,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-12">
-					<h2 class="sub text-center">We've had some great support...</h2>
+					<h2 class="sub-capital text-center">PROUDLY RECOMMENDED BY:</h2>
 				</div>
 			</div>
 			<div class="row">
@@ -123,13 +123,13 @@
 	<div class="bucket-detail">
 		<div class="container">
 			<div class="row  row-eq-height">
-				<div class="col-6">
+				<div class="col-sm-5">
 					<div class="bucket-image">
 											<img src="<?php echo $image; ?>" alt="">
 					</div>
 
 				</div>
-				<div class="col-6">
+				<div class="col-sm-7">
 					<div class="bucket-content">
 											<h2><?php echo $title; ?></h2>
 					<p  class="tagline"><?php echo $content; ?></p>
@@ -153,10 +153,10 @@
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-sm-6">
+			<div class="col-md-5">
 				<img class="hero-image" src="<?= get_template_directory_uri(); ?>/assets/images/app-screens-cropped.png">
 			</div>
-			<div class="col-sm-6">
+			<div class="col-md-7">
 				<div class="row">
 					<div class="col-6">
 						<div class="media-body">
@@ -194,7 +194,7 @@
 <!-- Setup Steps -->
 <div class="panel-wide">
 	<h2 class="text-center">Super Easy Setup</h2>
-	<p class="tagline text-center">Simply connect your phone, laptop or other device to any of our products over WiFi and thatâ€™s it! </p>
+	<p class="tagline text-center">Simply connect your phone, laptop or other device to any of our products over WiFi and that's it! </p>
 	<?php if ( have_rows( 'setup_steps' ) ): ?>
 	<div class="container">
 		<div class="row">
@@ -202,7 +202,7 @@
 			$image = get_sub_field( 'image' );
 			$content = get_sub_field( 'content' );
 			?>
-			<div class="col-12 col-sm-4">
+			<div class="col-4">
 				<div class="bucket bucket-steps">
 					<img src="<?php echo $image; ?>" alt="">
 					<h3><?php echo $content; ?></h3>

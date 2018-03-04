@@ -1,4 +1,8 @@
-<h1>;asdjf;kasdf</h1>
+<article @php(post_class())>
+  <div>
+    @php(the_content())
+  </div>
+</article>
 
 
 
