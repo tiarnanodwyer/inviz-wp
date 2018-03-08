@@ -16,6 +16,19 @@ export default {
 });
 
 
+      jQuery(function () {
+  'use strict'
+
+  jQuery('[data-toggle="offcanvas"]').on('click', function () {
+    jQuery('.offcanvas-collapse').toggleClass('open')
+  })
+})
+
+
+
+
+
+
   },
   finalize() {
     // JavaScript to be fired on all pages, after page specific JS is fired
