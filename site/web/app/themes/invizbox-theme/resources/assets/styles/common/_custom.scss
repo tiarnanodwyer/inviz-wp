@@ -26,9 +26,9 @@ h2.sub {
   font-weight: 600;
 }
 h2.sub-capital {
-  font-size: 1.25rem;
-  margin: 3rem 0 0;
-  font-weight: 600;
+  font-size: 0.85rem;
+  margin: 3rem 0 0.5rem;
+  font-weight: 500;
 }
 p.tagline {
   font-size: 1.25rem;
@@ -126,7 +126,7 @@ a {
 .media {
   margin: 4rem 0 0;
   h5 {
-    font-size: 1.15rem;
+    font-size: 1rem;
     font-weight: 600;
   }
   img {
@@ -194,9 +194,16 @@ a {
     text-align: center;
   }
   .bucket-content {
-    margin: 0 2rem 5rem;
     h2 {
       margin: 1rem;
+    }
+
+    a {
+      color: $color-highlight;
+      margin-top: 1rem;
+      display: inline-block;
+      font-weight: 600;
+      font-size: 1.15rem;
     }
   }
   img {
@@ -245,20 +252,20 @@ a {
     }
   }
   .jumbotron-detail-product {
+    padding: 8rem 0 5rem;
     text-align: center;
-    padding: 8rem 2rem 5rem;
     p.product {
       display: none;
     }
     h1 {
       color: white;
-      font-size: 3rem;
-      line-height: 3.5rem;
+      font-size: 2.5rem;
+      line-height: 3rem;
     }
     p.lead {
-      font-size: 1.5rem;
-      line-height: 2.25rem;
-      margin: 1.5rem 0 2rem;
+      font-size: 1.25rem;
+      line-height: 2rem;
+      margin: 0.5rem 0 1rem;
     }
     p.guarantee {
       color: lighten($color-primary, 20%);
@@ -283,17 +290,18 @@ a {
     padding: 0 2.5rem 5rem;
     img {
       width: 100%;
-      margin: 2rem 0;
+      margin: 2rem 0 0;
     }
     h5 {
-      font-size: 1.75rem;
-      font-weight: 700;
+      font-size: 1.65rem;
+      font-weight: 600;
       margin-bottom: 1rem;
     }
     p {
-      font-size: 1.15rem;
-      line-height: 2rem;
+      font-size: 1rem;
+      line-height: 1.75rem;
       margin-bottom: 1rem;
+      color: rgba($color-black, 0.75);
     }
     .product-tag {
       font-size: 1.35rem;
@@ -379,8 +387,9 @@ a {
 }
 /* ---------------------- Featured On Panel ---------------------- */
 .panel-featured-on {
-  background: rgba($color-primary, 0.2);
-  padding-bottom: 4rem;
+  border-top: solid 1px $color-border;
+  border-bottom: solid 1px $color-border;
+  padding-bottom: 5rem;
   .accreditation {
     text-align: center;
     img {
@@ -780,9 +789,10 @@ footer {
     line-height: 3.75rem;
   }
   h2 {
-    font-size: 2.75rem;
-    line-height: 3.25rem;
-    margin: 3rem 0 1.5rem;
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+    margin: 5rem 0 1.5rem;
+    font-weight: 600;
   }
   h2.caps {
     font-size: 1.25rem;
@@ -790,9 +800,11 @@ footer {
     margin-bottom: 0;
   }
   p.tagline {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     max-width: 700px;
     margin: 0 auto;
+    font-weight: 500;
+    color: rgba($color-black, 0.75);
   }
   /* ---------------------- Panels ---------------------- */
   .panel-testimonial {
@@ -803,15 +815,15 @@ footer {
     }
   }
   .bucket-detail {
-    padding: 4rem 0;
+    padding: 6.5rem 0;
 
     .bucket-content {
       -ms-flex-order: 1;
       order: 1;
 
       h2 {
-        font-size: 2rem;
-        line-height: 2.5rem;
+        font-size: 1.75rem;
+        line-height: 2.25rem;
         margin: 0 0 1rem;
       }
     }
@@ -821,12 +833,27 @@ footer {
     }
 
     p.tagline {
-      font-size: 1.35rem;
+      font-size: 1.15rem;
     }
     img {
       margin: 0;
     }
   }
+
+  /* ---------------------- Homepage ---------------------- */
+  .products-panel-holder {
+    margin-bottom: 3.5rem;
+    .products-panel {
+      margin: 2.5rem 0;
+      padding: 0 4rem;
+    }
+    > div:first-child {
+      .products-panel {
+        border-right: solid 1px $color-border;
+      }
+    }
+  }
+
   /* ---------------------- Product Box ---------------------- */
   .product-box {
     margin-bottom: 2rem;
@@ -889,17 +916,19 @@ footer {
   .jumbotron {
     background-size: auto !important;
     .jumbotron-detail {
-      padding: 10rem 0;
+      padding: 12rem 0;
       h1 {
-        font-size: 3rem;
-        line-height: 4rem;
+        font-size: 3.25rem;
+        line-height: 4.25rem;
       }
       p.lead {
-        font-size: 1.75rem;
+        font-size: 1.5rem;
       }
     }
     .jumbotron-detail-product {
-      padding: 11rem 2rem;
+      padding: 11rem 0;
+      text-align: left;
+
       p.product {
         color: white;
         font-size: 1rem;
@@ -907,14 +936,15 @@ footer {
         display: block;
       }
       h1 {
-        font-size: 4rem;
-        line-height: 5rem;
+        font-size: 3rem;
+        line-height: 4rem;
+        max-width: 600px;
       }
       p.lead {
-        font-size: 2rem;
-        line-height: 2.75rem;
-        max-width: 800px;
-        margin: 1rem auto;
+        font-size: 1.25rem;
+        line-height: 2rem;
+        max-width: 600px;
+        margin: 1rem 0;
       }
     }
   }

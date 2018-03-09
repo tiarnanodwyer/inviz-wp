@@ -7,11 +7,11 @@
 			<h1 class="jumbotron-heading"><?php the_field( 'hero_title' ); ?></h1>
 			<p class="lead text-muted"><?php the_field( 'hero_tagline' ); ?></p>
 			<a href="" class="btn btn-secondary">Learn More</a>
-			<a href="" class="btn btn-primary">Order Now</a>
+			<a href="" class="btn btn-primary">Order Nowsss</a>
 		</div>
 	</div>
 </section>
-<span class="ip-address" class="jumbotron-heading"><?php the_field( 'ip' ); ?></span>
+<!-- <span class="ip-address" class="jumbotron-heading"><?php the_field( 'ip' ); ?></span> -->
 <!-- Product Panel-->
 <div class="container">
 	<h2 class="text-center">Protect All your devices, everywhere!</h2>
@@ -49,6 +49,37 @@
 	?>
 </div>
 </div>
+
+<!-- As Featured Panel-->
+<?php if ( have_rows( 'featured_on' ) ): ?>
+	<div class="panel-featured-on">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<h2 class="sub-capital text-center">INVIZBOX HAS BEEN PROUDLY RECOMMENDED BY:</h2>
+				</div>
+			</div>
+			<div class="row">
+				<?php while ( have_rows( 'featured_on' ) ) : the_row();
+				$image = get_sub_field( 'image' );
+				$title = get_sub_field( 'title' );
+				$url = get_sub_field( 'url' );
+				?>
+				<div class="col">
+					<div class="accreditation">
+						<a href="<?php echo $url; ?>">
+							<img src="<?php echo $image; ?>" alt="">
+							<!-- <p><?php echo $title; ?></p> -->
+						</a>
+					</div>
+				</div>
+			<?php endwhile; ?>
+		</div>
+	</div>
+</div>
+<?php endif; ?>
+
+
 <!-- Features Panel-->
 <?php if ( have_rows( 'features' ) ): ?>
 	<div class="panel-wide">
@@ -79,34 +110,7 @@
 	</div>
 </div>
 <?php endif; ?>
-<!-- As Featured Panel-->
-<?php if ( have_rows( 'featured_on' ) ): ?>
-	<div class="panel-featured-on">
-		<div class="container">
-			<div class="row">
-				<div class="col-12">
-					<h2 class="sub-capital text-center">PROUDLY RECOMMENDED BY:</h2>
-				</div>
-			</div>
-			<div class="row">
-				<?php while ( have_rows( 'featured_on' ) ) : the_row();
-				$image = get_sub_field( 'image' );
-				$title = get_sub_field( 'title' );
-				$url = get_sub_field( 'url' );
-				?>
-				<div class="col-4">
-					<div class="accreditation">
-						<a href="<?php echo $url; ?>">
-							<img src="<?php echo $image; ?>" alt="">
-							<!-- <p><?php echo $title; ?></p> -->
-						</a>
-					</div>
-				</div>
-			<?php endwhile; ?>
-		</div>
-	</div>
-</div>
-<?php endif; ?>
+
 <!-- Bucket Panels-->
 <?php if ( have_rows( 'bucket_detail' ) ): ?>
 	<?php while ( have_rows( 'bucket_detail' ) ) : the_row();
@@ -119,16 +123,16 @@
 	<div class="bucket-detail">
 		<div class="container">
 			<div class="row  row-eq-height">
-				<div class="col-sm-5">
+				<div class="col-sm-6">
 					<div class="bucket-image">
 						<img src="<?php echo $image; ?>" alt="">
 					</div>
 				</div>
-				<div class="col-sm-7">
+				<div class="col-sm-6">
 					<div class="bucket-content">
 						<h2><?php echo $title; ?></h2>
 						<p  class="tagline"><?php echo $content; ?></p>
-						<a href="$link" class="btn btn-default">Learn More</a>
+						<a href="$link">Learn More</a>
 					</div>
 				</div>
 			</div>
