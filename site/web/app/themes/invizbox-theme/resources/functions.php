@@ -36,7 +36,7 @@ if (!class_exists('Roots\\Sage\\Container')) {
         $sage_error(
             __('You must run <code>composer install</code> from the Sage directory.', 'sage'),
             __('Autoloader not found.', 'sage')
-        );
+            );
     }
     require_once $composer;
 }
@@ -69,22 +69,45 @@ function woo_remove_product_tabs( $tabs ) {
 
 
 
+// removes Order Notes Title - Additional Information
+add_filter( 'woocommerce_enable_order_notes_field', '__return_false' );
+
+
+
+//remove Order Notes Field
+add_filter( 'woocommerce_checkout_fields' , 'remove_order_notes' );
+
+function remove_order_notes( $fields ) {
+   unset($fields['order']['order_comments']);
+   return $fields;
+}
+
+add_filter( 'woocommerce_checkout_fields' , 'custom_override_checkout_fields' );
+
+function custom_override_checkout_fields( $fields ) {
+    unset($fields['billing']['billing_company']);
+    unset($fields['billing']['billing_phone']);
+    return $fields;
+}
+
+
+
 // Display User IP in WordPress
- 
- 
+
+
 function get_the_user_ip() {
-if ( ! empty( $_SERVER['HTTP_CLIENT_IP'] ) ) {
+    if ( ! empty( $_SERVER['HTTP_CLIENT_IP'] ) ) {
 //check ip from share internet
-$ip = $_SERVER['HTTP_CLIENT_IP'];
-} elseif ( ! empty( $_SERVER['HTTP_X_FORWARDED_FOR'] ) ) {
+        $ip = $_SERVER['HTTP_CLIENT_IP'];
+    } elseif ( ! empty( $_SERVER['HTTP_X_FORWARDED_FOR'] ) ) {
 //to check ip is pass from proxy
-$ip = $_SERVER['HTTP_X_FORWARDED_FOR'];
-} else {
-$ip = $_SERVER['REMOTE_ADDR'];
+        $ip = $_SERVER['HTTP_X_FORWARDED_FOR'];
+    } else {
+        $ip = $_SERVER['REMOTE_ADDR'];
+    }
+    return apply_filters( 'wpb_get_ip', $ip );
 }
-return apply_filters( 'wpb_get_ip', $ip );
-}
- 
+
 add_shortcode('show_ip', 'get_the_user_ip');
 
 
@@ -111,12 +134,12 @@ array_map(
     'add_filter',
     ['theme_file_path', 'theme_file_uri', 'parent_theme_file_path', 'parent_theme_file_uri'],
     array_fill(0, 4, 'dirname')
-);
+    );
 Container::getInstance()
-    ->bindIf('config', function () {
-        return new Config([
-            'assets' => require dirname(__DIR__).'/config/assets.php',
-            'theme' => require dirname(__DIR__).'/config/theme.php',
-            'view' => require dirname(__DIR__).'/config/view.php',
+->bindIf('config', function () {
+    return new Config([
+        'assets' => require dirname(__DIR__).'/config/assets.php',
+        'theme' => require dirname(__DIR__).'/config/theme.php',
+        'view' => require dirname(__DIR__).'/config/view.php',
         ]);
-    }, true);
+}, true);

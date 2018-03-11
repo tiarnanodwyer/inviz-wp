@@ -1,5 +1,5 @@
-<nav class="navbar navbar-expand-md fixed-top navbar-dark">
-  <div class="container d-flex flex-column flex-md-row justify-content-between">
+<nav class="navbar navbar-expand-md fixed-top">
+  <div class="container">
     <a class="navbar-brand" href="{{ home_url('/') }}">
       <span class="sr-only">
         {{ get_bloginfo('name', 'display') }}

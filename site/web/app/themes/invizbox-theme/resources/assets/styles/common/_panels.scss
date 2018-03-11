@@ -1,0 +1,346 @@
+.panel-wide {
+  background: whitesmoke;
+  margin: 0;
+  padding: 1rem 0 7rem;
+  clear: both;
+}
+
+
+
+
+
+/* ---------------------- Panel Features ---------------------- */
+
+.panel-features {
+  background: $color-grey;
+  padding: 2rem 0 6rem;
+  .media {
+    margin: 2rem 2rem 0;
+    h5 {
+      font-size: 1.1rem;
+      font-weight: 700;
+    }
+    img {
+      width: 64px;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .panel-features {
+    .media {
+      margin: 2rem 0;
+      h5 {
+        font-size: 1.05rem;
+      }
+    }
+  }
+}
+
+
+
+
+
+/* ---------------------- Bucket Detail ---------------------- */
+
+.bucket-detail {
+  padding: 4rem 0;
+  &:nth-of-type(2n) {
+    background: $color-grey;
+  }
+  .bucket-image {
+    text-align: center;
+  }
+  .bucket-content {
+    h2 {
+      font-size: 1.75rem;
+      line-height: 2.25rem;
+      margin: 0 0 1rem;
+    }
+    a {
+      color: $color-highlight;
+      margin-top: 1rem;
+      display: inline-block;
+      font-weight: 600;
+      font-size: 1.15rem;
+    }
+  }
+  img {
+    height: auto;
+    max-width: 100%;
+    max-height: 300px;
+    display: inline-block;
+  }
+}
+
+@media (min-width: 768px) {
+  .bucket-detail {
+    padding: 6.5rem 0;
+    &:nth-of-type(2n) {
+      .row>div:first-child {
+        order: 2;
+      }
+    }
+    .bucket-content {
+      -ms-flex-order: 1;
+      order: 1;
+    }
+    .bucket-image {
+      -ms-flex-order: 2;
+      order: 2;
+    }
+    img {
+      margin: 0;
+    }
+  }
+}
+
+
+
+
+
+/* ---------------------- Buckets ---------------------- */
+
+// .bucket {
+//   height: 100%;
+//   margin: 2rem 1rem;
+//   border: solid 2px red;
+//   img {
+//     width: 50px;
+//     margin-bottom: 1rem;
+//   }
+//   h3 {
+//     font-size: 1rem;
+//     line-height: 1.5rem;
+//     font-weight: 600;
+//   }
+//   p {
+//     font-size: 1rem;
+//     line-height: 1.5rem;
+//   }
+// }
+// @media (min-width: 768px) {
+//   .bucket {
+//     height: 100%;
+//     margin: 2rem 1rem;
+//     img {
+//       width: 50px;
+//       margin-bottom: 1rem;
+//     }
+//     h3 {
+//       font-size: 1rem;
+//       line-height: 1.5rem;
+//       font-weight: 600;
+//     }
+//     p {
+//       font-size: 1rem;
+//       line-height: 1.5rem;
+//     }
+//   }
+// }
+
+/* ---------------------- Setup Steps ---------------------- */
+
+.bucket-steps {
+  text-align: center;
+  padding: 0;
+  img {
+    width: auto;
+  }
+  h3 {
+    font-size: 1.25rem;
+    line-height: 2rem;
+    font-weight: 600;
+  }
+}
+
+@media (min-width: 768px) {
+  .bucket-steps {
+    padding: 0 1rem;
+    img {
+      width: 100%;
+      margin: 1rem 0 2rem;
+    }
+    h3 {
+      font-size: 1.15rem;
+      line-height: 1.5rem;
+    }
+  }
+}
+
+
+
+
+
+/* ---------------------- Featured On Panel ---------------------- */
+
+.panel-featured-on {
+  border-top: solid 1px $color-border;
+  border-bottom: solid 1px $color-border;
+  padding-bottom: 5rem;
+  .accreditation {
+    text-align: center;
+    img {
+      width: 80%;
+      margin: 1rem 0 0;
+    }
+    p {
+      font-size: 1.1rem;
+    }
+    a {
+      color: $color-black;
+    }
+  }
+}
+
+
+
+
+
+/* ---------------------- Testimonial Panel ---------------------- */
+
+.panel-testimonial {
+  background: darken($color-primary, 10%);
+  padding: 4rem 0;
+  margin: 0;
+  color: white;
+  blockquote {
+    display: inline;
+    width: 70%;
+  }
+  p {
+    font-size: 1.5rem;
+    width: 70%;
+    display: inline-block;
+  }
+  img {
+    float: left;
+    margin: 0 2rem 2rem 0;
+    border: solid 2px white;
+    width: 20%;
+    height: auto;
+  }
+}
+
+@media (min-width: 768px) {
+  .panel-testimonial {
+    p.testimonial {
+      font-size: 1.25rem;
+      clear: none;
+      font-style: italic;
+    }
+  }
+}
+
+
+
+
+
+/* ---------------------- Product Info Panel ---------------------- */
+
+.product-intro-panel {
+  .product-info {
+    padding: 2rem 0;
+    text-align: center;
+    h3 {
+      margin: 2rem 0 1rem;
+      font-size: 1.15rem;
+      font-weight: 600;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ---------------------- Pricing Panel ---------------------- */
+
+.container-pricing {
+  padding: 2rem 4rem;
+  .pricing-panel {
+    background: $color-grey;
+    max-width: 400px;
+    margin: 0 auto 7rem;
+    padding: 2rem;
+    text-align: center;
+    position: relative;
+    h1 {
+      font-size: 1.5rem;
+      font-weight: 700;
+    }
+    p.price {
+      font-size: 4rem;
+      font-weight: 600;
+      margin-bottom: 0;
+    }
+    p.discount {
+      font-size: 1.2rem;
+      text-decoration: line-through;
+    }
+    img {
+      vertical-align: middle;
+      height: 250px;
+      width: auto;
+      margin-bottom: 1rem;
+    }
+    .btn {
+      margin: 1rem 0;
+    }
+    .bullets {
+      p {
+        border-bottom: solid 1px $color-grey;
+        line-height: 3rem;
+        margin: 0;
+      }
+    }
+    .sale-tag {
+      display: none;
+    }
+    &.recommended {
+      box-shadow: 0 0 36px rgba(0, 0, 0, 0.5);
+      .sale-tag {
+        background: $color-primary;
+        color: white;
+        position: absolute;
+        top: -3rem;
+        padding: 0.75rem;
+        display: inline-block;
+        left: 0;
+        width: 100%;
+        font-weight: 600;
+      }
+    }
+  }
+  .pricing-panel-product {
+    margin-top: -10rem;
+    .pricing-panel {
+      margin-top: 0;
+      padding: 0;
+      background: none;
+    }
+  }
+}
+
+
+@media (min-width: 768px) {
+  .container-pricing {
+    margin: 3rem 0;
+  }
+}

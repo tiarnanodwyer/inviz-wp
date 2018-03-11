@@ -1,168 +1,78 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700');
-
 body {
   font-size: 16px;
   color: $color-black;
   font-family: 'Montserrat', sans-serif;
 }
 
+
+
+
 /* ---------------------- Typography ---------------------- */
+
 .h1,
 h1 {
   font-size: 1.75rem;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 2.5rem;
-  color: $color-black;
 }
+
 h2 {
   font-size: 2rem;
   line-height: 2.25rem;
   margin: 4rem 0 1rem;
   font-weight: 700;
 }
+
 h2.sub {
   font-size: 1.75rem;
   margin: 3rem 0 1rem;
   font-weight: 600;
 }
+
 h2.sub-capital {
   font-size: 0.85rem;
   margin: 3rem 0 0.5rem;
   font-weight: 500;
 }
-p.tagline {
-  font-size: 1.25rem;
-  font-weight: 400;
-  margin: 1rem;
+
+p {
+  font-weight: 500;
 }
+
+p.tagline {
+  font-size: 1.35rem;
+  max-width: 800px;
+  margin: 0 auto 1rem;
+  font-weight: 500;
+  color: rgba($color-black, 0.75);
+}
+
 p.lead {
-  color: white !important;
   opacity: 0.6;
   font-size: 1.75rem;
   line-height: 2.25rem;
   margin: 1rem 0 1.75rem;
 }
+
 hr.small {
   border: solid 5px $color-black;
   margin: 3rem auto;
   width: 4rem;
 }
+
 a {
   color: $color-primary;
 }
-/* ---------------------- Navigation ---------------------- */
-.navbar {
-  background: $color-black;
-  .navbar-brand {
-    background-image: url("../images/logo-invizbox-w.png");
-    height: 35px;
-    width: 180px;
-    background-repeat: no-repeat;
-    padding: 0;
-  }
-}
-
-/* ---------------------- Off Canvas ---------------------- */
-
-@media (max-width: 767.98px) {
-  .offcanvas-collapse {
-    position: fixed;
-    top: 56px; /* Height of navbar */
-    bottom: 0;
-    width: 100%;
-    padding-right: 1rem;
-    padding-left: 1rem;
-    overflow-y: auto;
-    background-color: var(--gray-dark);
-    transition: -webkit-transform 0.3s ease-in-out;
-    transition: transform 0.3s ease-in-out;
-    transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
-    -webkit-transform: translateX(100%);
-    transform: translateX(100%);
-  }
-  .offcanvas-collapse.open {
-    -webkit-transform: translateX(-1rem);
-    transform: translateX(-1rem); /* Account for horizontal padding on navbar */
-  }
-}
 
 
 
-/* ---------------------- Buckets ---------------------- */
-.bucket {
-  height: 100%;
-  margin: 2rem 1rem;
-  img {
-    width: 50px;
-    margin-bottom: 1rem;
-  }
-  h3 {
-    font-size: 1rem;
-    line-height: 1.5rem;
-    font-weight: 600;
-  }
-  p {
-    font-size: 1rem;
-    line-height: 1.5rem;
-  }
-}
-.bucket-steps {
-  text-align: center;
-  padding: 0;
-  img {
-    margin-bottom: 1rem;
-    width: 100%;
-  }
-  h3 {
-    font-size: 1rem;
-    line-height: 1.25rem;
-  }
-  .badge {
-    background: $color-primary;
-    color: $color-black;
-  }
-}
-/* ---------------------- Feature Panels ---------------------- */
-.media {
-  margin: 4rem 0 0;
-  h5 {
-    font-size: 1rem;
-    font-weight: 600;
-  }
-  img {
-    width: 64px;
-  }
-}
-/* ---------------------- Panels ---------------------- */
-.panel-wide {
-  background: whitesmoke;
-  margin: 0;
-  padding: 1rem 0 7rem;
-  clear: both;
-}
-.panel-testimonial {
-  background: darken($color-primary, 10%);
-  padding: 4rem 0;
-  margin: 0;
-  color: white;
-  blockquote {
-    display: inline;
-    width: 70%;
-  }
-  p {
-    font-size: 1.5rem;
-    width: 70%;
-    display: inline-block;
-  }
-  img {
-    float: left;
-    margin: 0 2rem 2rem 0;
-    border: solid 2px white;
-    width: 20%;
-    height: auto;
-  }
-}
+
+
+
+
 /* ---------------------- Panel Open Source ---------------------- */
+
 .panel-open-source {
   background: $color-black;
   color: white;
@@ -185,106 +95,13 @@ a {
     }
   }
 }
-/* ---------------------- Bucket Detail ---------------------- */
-.bucket-detail {
-  &:nth-of-type(2n) {
-    background: $color-grey;
-  }
-  .bucket-image {
-    text-align: center;
-  }
-  .bucket-content {
-    h2 {
-      margin: 1rem;
-    }
 
-    a {
-      color: $color-highlight;
-      margin-top: 1rem;
-      display: inline-block;
-      font-weight: 600;
-      font-size: 1.15rem;
-    }
-  }
-  img {
-    margin: 4rem auto 2rem;
-    height: auto;
-    max-width: 200px;
-    display: inline-block;
-  }
-}
-/* ---------------------- Jumbotron ---------------------- */
-.jumbotron {
-  background-color: $color-black;
-  border-radius: 0;
-  background-repeat: no-repeat;
-  background-position: top right;
-  padding: 0;
-  margin-bottom: 0;
-  background-size: 0, 0 !important;
-  .jumbotron-notification {
-    background: yellow;
-    text-align: center;
-    max-width: 80%;
-    width: auto;
-    position: absolute;
-    top: 7rem;
-    margin: 0 auto;
-    display: inline-block;
-    padding: 0.5rem 2rem;
-  }
-  .jumbotron-detail {
-    text-align: left;
-    max-width: 600px;
-    padding: 8rem 0;
-    h1 {
-      color: white;
-      font-size: 2.75rem;
-      line-height: 3.75rem;
-    }
-    p.lead {
-      font-size: 1.35rem;
-      line-height: 2rem;
-      opacity: 0.8;
-    }
-    .btn {
-      padding: 0.75rem 1.25rem;
-    }
-  }
-  .jumbotron-detail-product {
-    padding: 8rem 0 5rem;
-    text-align: center;
-    p.product {
-      display: none;
-    }
-    h1 {
-      color: white;
-      font-size: 2.5rem;
-      line-height: 3rem;
-    }
-    p.lead {
-      font-size: 1.25rem;
-      line-height: 2rem;
-      margin: 0.5rem 0 1rem;
-    }
-    p.guarantee {
-      color: lighten($color-primary, 20%);
-    }
-    .btn-cta {
-      margin: 1rem 0;
-    }
-  }
-  .jumbotron-detail-general {
-    padding: 10em 0 5rem;
-    max-width: auto;
-    text-align: center;
-    h1 {
-      color: white;
-      font-size: 3.5rem;
-    }
-  }
-}
+
+
+
+
 /* ---------------------- Homepage ---------------------- */
+
 .products-panel-holder {
   .products-panel {
     padding: 0 2.5rem 5rem;
@@ -312,6 +129,7 @@ a {
     }
   }
 }
+
 .ip-address {
   background: $color-notification;
   color: $color-highlight;
@@ -320,91 +138,15 @@ a {
   text-align: center;
   padding: 0.25rem;
 }
-/* ---------------------- Pricing Panel ---------------------- */
-.container-pricing {
-  margin: 3rem auto 7rem;
-}
-.pricing-panel {
-  background: $color-grey;
-  margin-top: 4rem;
-  padding: 2rem;
-  text-align: center;
-  position: relative;
-  h1 {
-    font-size: 1.5rem;
-    font-weight: 700;
-  }
-  p.price {
-    font-size: 4rem;
-    font-weight: 600;
-    margin-bottom: 0;
-  }
-  p.discount {
-    font-size: 1.2rem;
-    text-decoration: line-through;
-  }
-  img {
-    vertical-align: middle;
-    height: 250px;
-    width: auto;
-    margin-bottom: 1rem;
-  }
-  .btn {
-    margin: 1rem 0;
-  }
-  .bullets {
-    p {
-      border-bottom: solid 1px $color-grey;
-      line-height: 3rem;
-      margin: 0;
-    }
-  }
-  .sale-tag {
-    display: none;
-  }
-  &.recommended {
-    box-shadow: 0 0 36px rgba(0, 0, 0, 0.5);
-    .sale-tag {
-      background: $color-primary;
-      color: white;
-      position: absolute;
-      top: -3rem;
-      padding: 0.75rem;
-      display: inline-block;
-      left: 0;
-      width: 100%;
-      font-weight: 600;
-    }
-  }
-}
-.pricing-panel-product {
-  margin-top: -10rem;
-  .pricing-panel {
-    margin-top: 0;
-    padding: 0;
-    background: none;
-  }
-}
-/* ---------------------- Featured On Panel ---------------------- */
-.panel-featured-on {
-  border-top: solid 1px $color-border;
-  border-bottom: solid 1px $color-border;
-  padding-bottom: 5rem;
-  .accreditation {
-    text-align: center;
-    img {
-      width: 80%;
-      margin: 1rem 0 0;
-    }
-    p {
-      font-size: 1.1rem;
-    }
-    a {
-      color: $color-black;
-    }
-  }
-}
+
+
+
+
+
+
+
 /* ---------------------- Product Hero ---------------------- */
+
 .product-shot-main {
   img {
     margin-top: -6rem;
@@ -415,7 +157,12 @@ a {
     margin-top: 0;
   }
 }
+
+
+
+
 /* ---------------------- Product Box ---------------------- */
+
 .product-box {
   margin-bottom: 2rem;
   padding: 0 2rem;
@@ -437,21 +184,29 @@ a {
     vertical-align: middle;
   }
 }
+
+
+
+
 /* ---------------------- Buttons ---------------------- */
+
 .btn {
   border-radius: 2px;
   font-size: 1rem;
   padding: 0.5rem 1.25rem;
 }
+
 .btn-primary {
   background: $color-highlight;
   border-color: $color-highlight;
 }
+
 .btn-secondary {
   background: white;
   border-color: rgba($color-black, 0.35);
   color: $color-black;
 }
+
 .btn-cta {
   margin: 2rem 0 5rem;
   border-radius: 2px;
@@ -461,11 +216,17 @@ a {
   padding: 0.75rem;
   border: 0;
 }
+
 .btn-cta-normal {
   background: $color-primary;
   color: #2a2b2c;
 }
+
+
+
+
 /* ---------------------- Login ---------------------- */
+
 .form-signin {
   max-width: 330px;
   padding: 15px;
@@ -482,11 +243,21 @@ a {
     margin-bottom: 16px;
   }
 }
+
+
+
+
 /* ---------------------- General Page ---------------------- */
+
 .general {
   margin: 5rem 0;
 }
+
+
+
+
 /* ---------------------- Product Page ---------------------- */
+
 .delivery {
   margin-top: 54px;
   background: $color-grey;
@@ -495,6 +266,7 @@ a {
   font-weight: 600;
   line-height: 1rem;
 }
+
 .panel-store {
   margin: 2rem 0;
   img {
@@ -536,7 +308,12 @@ a {
     margin: 2rem 0 0;
   }
 }
+
+
+
+
 /* ---------------------- Footer ---------------------- */
+
 footer {
   color: $color-black;
   padding: 4rem 0 8rem;
@@ -573,7 +350,12 @@ footer {
     opacity: 0.5;
   }
 }
+
+
+
+
 /* ---------------------- Contact Form  ---------------------- */
+
 .wpcf7 {
   label {
     font-size: 1.25rem;
@@ -599,189 +381,28 @@ footer {
     width: 120px;
   }
 }
-/* ---------------------- Woo ---------------------- */
-.banner-refund {
-  background: $color-grey;
-  height: 88px;
-  line-height: 88px;
-  margin-top: 56px;
-  font-weight: 600;
-  font-size: 16px;
-  margin-bottom: 2rem;
-  img {
-    max-height: 40px;
-    width: auto;
-    margin-right: 16px;
-  }
-}
-.template-shop {
-  .navbar {
-    background: white !important;
-    border-bottom: solid 1px $color-border;
-    transition: 0.4s;
-    box-shadow: 0 3px 3px rgba($color-black, 0.05);
-    padding-top: 0;
-    padding-bottom: 0;
-    .navbar-brand {
-      background-image: url("../images/logo-invizbox.png");
-    }
-    .nav-link {
-      color: $color-black;
-    }
-  }
-  h1 {
-    font-size: 2.5rem;
-  }
-}
-.woocommerce {
-  margin: 2rem 0;
-  .container {
-    margin-top: 1.5rem;
-  }
-  .col-1,
-  .col-2 {
-    max-width: none;
-  }
-  h2 {
-    font-size: 2rem;
-  }
-  #respond input#submit.alt,
-  a.button.alt,
-  button.button.alt,
-  input.button.alt {
-    background-color: $color-primary;
-    color: #fff;
-  }
-  /* ---------------------- Woo Product Page ---------------------- */
-  div.product .product_title {
-    clear: none;
-    margin-top: 2rem;
-    font-size: 2.5rem;
-  }
-  div.product p.price del,
-  div.product span.price del {
-    display: block;
-  }
-  div.product form.cart .button {
-    vertical-align: middle;
-    float: none;
-    display: block;
-    width: 100%;
-    height: 3rem;
-    margin: 2rem auto;
-    background: $color-primary;
-  }
-  div.product p.price,
-  div.product span.price {
-    color: $color-primary;
-  }
-  .summary.entry-summary > .price {
-    display: none;
-  }
-  .woocommerce-variation-price {
-    del {
-      color: rgba($color-black, 50);
-      font-size: 1rem;
-      &::before {
-        content: 'Was: ';
-      }
-    }
-    ins {
-      display: block;
-      font-size: 1.5rem;
-      font-weight: 600;
-      color: $color-black;
-      text-decoration: none;
-      &::before {
-        content: 'Price: ';
-      }
-    }
-  }
-  span.onsale {
-    background: $color-highlight;
-    width: 80px;
-    height: 80px;
-    line-height: 80px;
-    padding: 0;
-    font-size: 1.25rem;
-    top: 0;
-    left: 0;
-  }
-  td.value div {
-    background: $color-grey;
-    padding: 0.25rem 1rem;
-    margin-bottom: 0.25rem;
-    input {
-      margin-right: 10px;
-    }
-  }
-  div.product div.images .woocommerce-product-gallery__image:nth-child(n+2) {
-    width: 31%;
-    display: inline-block;
-    border: solid 1px $color-border;
-    margin-right: 2%;
-  }
-  .product_meta,
-  a.reset_variations,
-  .tabs.wc-tabs,
-  .woocommerce-Tabs-panel {
-    display: none !important;
-  }
-}
-/* ---------------------- Woo Cart---------------------- */
-#add_payment_method table.cart img,
-.woocommerce-cart table.cart img,
-.woocommerce-checkout table.cart img {
-  width: auto;
-}
+
+
+
+
 /* ---------------------- Media Queries ---------------------- */
+
+
 /* ---------------------- Media Queries ---------------------- */
+
+
 /* ---------------------- Media Queries ---------------------- */
+
+
 /* ---------------------- Media Queries ---------------------- */
+
+
 /* ---------------------- Media Queries ---------------------- */
+
+
 /* ---------------------- Media Queries ---------------------- */
+
 @media (min-width: 768px) {
-  /* ---------------------- Navigation ---------------------- */
-  .navbar {
-    background: none;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    .nav-link,
-    .banner .nav a {
-      display: block;
-      padding: 1rem;
-    }
-    &.scrolled {
-      background: white !important;
-      border-bottom: solid 1px $color-border;
-      transition: 0.4s;
-      box-shadow: 0 3px 3px rgba($color-black, 0.05);
-      padding-top: 0;
-      padding-bottom: 0;
-      .navbar-brand {
-        background-image: url("../images/logo-invizbox.png");
-      }
-      .nav-link {
-        color: $color-black;
-      }
-    }
-    .wpmenucart-display-standard {
-      padding: 1rem;
-    }
-    .wpmenucart-contents {
-      padding: 0.25rem 1rem !important;
-      background: $color-green;
-      color: white;
-      &:hover {
-        background: lighten($color-green, 10%);
-        text-decoration: none;
-      }
-    }
-  }
-  /* ---------------------- Navigation ---------------------- */
-  .nav-link {
-    margin: 0 1rem;
-  }
   /* ---------------------- Typography ---------------------- */
   .h1,
   h1 {
@@ -799,46 +420,6 @@ footer {
     text-transform: uppercase;
     margin-bottom: 0;
   }
-  p.tagline {
-    font-size: 1.25rem;
-    max-width: 700px;
-    margin: 0 auto;
-    font-weight: 500;
-    color: rgba($color-black, 0.75);
-  }
-  /* ---------------------- Panels ---------------------- */
-  .panel-testimonial {
-    p.testimonial {
-      font-size: 1.25rem;
-      clear: none;
-      font-style: italic;
-    }
-  }
-  .bucket-detail {
-    padding: 6.5rem 0;
-
-    .bucket-content {
-      -ms-flex-order: 1;
-      order: 1;
-
-      h2 {
-        font-size: 1.75rem;
-        line-height: 2.25rem;
-        margin: 0 0 1rem;
-      }
-    }
-    .bucket-image {
-      -ms-flex-order: 2;
-      order: 2;
-    }
-
-    p.tagline {
-      font-size: 1.15rem;
-    }
-    img {
-      margin: 0;
-    }
-  }
 
   /* ---------------------- Homepage ---------------------- */
   .products-panel-holder {
@@ -847,13 +428,12 @@ footer {
       margin: 2.5rem 0;
       padding: 0 4rem;
     }
-    > div:first-child {
+    >div:first-child {
       .products-panel {
         border-right: solid 1px $color-border;
       }
     }
   }
-
   /* ---------------------- Product Box ---------------------- */
   .product-box {
     margin-bottom: 2rem;
@@ -882,70 +462,6 @@ footer {
   .product-shot-main {
     img {
       margin-top: -10rem;
-    }
-  }
-  /* ---------------------- Buckets ---------------------- */
-  .bucket {
-    height: 100%;
-    margin: 2rem 1rem;
-    img {
-      width: 50px;
-      margin-bottom: 1rem;
-    }
-    h3 {
-      font-size: 1rem;
-      line-height: 1.5rem;
-      font-weight: 600;
-    }
-    p {
-      font-size: 1rem;
-      line-height: 1.5rem;
-    }
-  }
-  .bucket-steps {
-    padding: 0 2rem;
-    img {
-      width: 100%;
-    }
-    h3 {
-      font-size: 1.25rem;
-      line-height: 1.5rem;
-    }
-  }
-  /* ---------------------- Jumbotron ---------------------- */
-  .jumbotron {
-    background-size: auto !important;
-    .jumbotron-detail {
-      padding: 12rem 0;
-      h1 {
-        font-size: 3.25rem;
-        line-height: 4.25rem;
-      }
-      p.lead {
-        font-size: 1.5rem;
-      }
-    }
-    .jumbotron-detail-product {
-      padding: 11rem 0;
-      text-align: left;
-
-      p.product {
-        color: white;
-        font-size: 1rem;
-        text-transform: uppercase;
-        display: block;
-      }
-      h1 {
-        font-size: 3rem;
-        line-height: 4rem;
-        max-width: 600px;
-      }
-      p.lead {
-        font-size: 1.25rem;
-        line-height: 2rem;
-        max-width: 600px;
-        margin: 1rem 0;
-      }
     }
   }
 }

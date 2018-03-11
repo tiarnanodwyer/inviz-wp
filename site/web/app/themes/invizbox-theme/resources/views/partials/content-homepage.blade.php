@@ -1,11 +1,11 @@
-<section class="jumbotron" style="background-image: url(<?php the_field( 'jumbotron' ); ?>);">
+<section class="jumbotron jumbotron-homepage" style="background-image: url(<?php the_field( 'jumbotron' ); ?>);">
 	<div class="container">
 		<span class="jumbotron-notification">
 			<?php the_field( 'jumbotron_notification' ); ?>
 		</span>
 		<div class="jumbotron-detail">
 			<h1 class="jumbotron-heading"><?php the_field( 'hero_title' ); ?></h1>
-			<p class="lead text-muted"><?php the_field( 'hero_tagline' ); ?></p>
+			<p class="lead"><?php the_field( 'hero_tagline' ); ?></p>
 			<a href="" class="btn btn-secondary">Learn More</a>
 			<a href="" class="btn btn-primary">Order Nowsss</a>
 		</div>
@@ -82,7 +82,7 @@
 
 <!-- Features Panel-->
 <?php if ( have_rows( 'features' ) ): ?>
-	<div class="panel-wide">
+	<div class="panel-features">
 		<div class="container">
 			<div class="row">
 				<div class="col-12">
@@ -96,7 +96,7 @@
 				$text = get_sub_field( 'text' );
 				$image = get_sub_field( 'image' );
 				?>
-				<div class="col-6 col-lg-4">
+				<div class="col-md-6 col-lg-4">
 					<div class="media">
 						<img class="mr-3" src="<?php echo $image; ?>" alt="">
 						<div class="media-body">
@@ -122,7 +122,7 @@
 	?>
 	<div class="bucket-detail">
 		<div class="container">
-			<div class="row  row-eq-height">
+			<div class="row  align-items-center">
 				<div class="col-sm-6">
 					<div class="bucket-image">
 						<img src="<?php echo $image; ?>" alt="">
@@ -131,7 +131,7 @@
 				<div class="col-sm-6">
 					<div class="bucket-content">
 						<h2><?php echo $title; ?></h2>
-						<p  class="tagline"><?php echo $content; ?></p>
+						<p><?php echo $content; ?></p>
 						<a href="$link">Learn More</a>
 					</div>
 				</div>
