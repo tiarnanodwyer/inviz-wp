@@ -1,9 +1,18 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700');
+@import url('https://fonts.googleapis.com/css?family=Merriweather:300,400,700');
+
 body {
   font-size: 16px;
   color: $color-black;
   font-family: 'Montserrat', sans-serif;
 }
+
+
+
+
+
+
+
 
 
 
@@ -68,6 +77,16 @@ a {
 
 
 
+hr {
+  border-top: solid 1px $color-border;
+  margin: 4rem;
+}
+
+
+
+
+
+
 
 
 
@@ -100,6 +119,13 @@ a {
 
 
 
+
+
+
+
+
+
+
 /* ---------------------- Homepage ---------------------- */
 
 .products-panel-holder {
@@ -127,17 +153,68 @@ a {
     a {
       margin-top: 1rem;
     }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    li {
+      padding: 0.5rem 0;
+      border-top: solid 1px $color-border;
+    }
   }
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ---------------------- IP ---------------------- */
+
 .ip-address {
-  background: $color-notification;
+  background: rgba($color-primary, 0.1);
   color: $color-highlight;
   width: 100%;
   display: inline-block;
   text-align: center;
   padding: 0.25rem;
 }
+
+
+.ip-address-why {
+  text-align: center;
+  background: rgba($color-primary, 0.1);
+  margin: 1.5rem auto 3rem;
+  padding: 0.5rem 1rem;
+  width: fit-content;
+
+
+  p {
+    margin: 0;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    color: darken($color-primary, 10%);
+  }
+}
+
+
+
+
+
+
+
 
 
 
@@ -157,6 +234,13 @@ a {
     margin-top: 0;
   }
 }
+
+
+
+
+
+
+
 
 
 
@@ -184,6 +268,13 @@ a {
     vertical-align: middle;
   }
 }
+
+
+
+
+
+
+
 
 
 
@@ -225,6 +316,13 @@ a {
 
 
 
+
+
+
+
+
+
+
 /* ---------------------- Login ---------------------- */
 
 .form-signin {
@@ -247,11 +345,25 @@ a {
 
 
 
+
+
+
+
+
+
+
 /* ---------------------- General Page ---------------------- */
 
 .general {
   margin: 5rem 0;
 }
+
+
+
+
+
+
+
 
 
 
@@ -312,6 +424,13 @@ a {
 
 
 
+
+
+
+
+
+
+
 /* ---------------------- Footer ---------------------- */
 
 footer {
@@ -354,6 +473,13 @@ footer {
 
 
 
+
+
+
+
+
+
+
 /* ---------------------- Contact Form  ---------------------- */
 
 .wpcf7 {
@@ -381,6 +507,13 @@ footer {
     width: 120px;
   }
 }
+
+
+
+
+
+
+
 
 
 

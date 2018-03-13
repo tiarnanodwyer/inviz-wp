@@ -9,6 +9,14 @@
 
 
 
+
+
+
+
+
+
+
+
 /* ---------------------- Panel Features ---------------------- */
 
 .panel-features {
@@ -36,6 +44,14 @@
     }
   }
 }
+
+
+
+
+
+
+
+
 
 
 
@@ -94,6 +110,14 @@
     }
   }
 }
+
+
+
+
+
+
+
+
 
 
 
@@ -172,6 +196,72 @@
 
 
 
+
+
+
+
+
+
+
+
+/* ---------------------- Plain Header ---------------------- */
+
+.plain-header {
+  padding: 8rem 0;
+  text-align: center;
+  background-color: rgba($color-primary, 0.05);
+  img {
+    margin-bottom: 5rem;
+    max-width: 100%;
+  }
+  h1.plain-header {
+    font-size: 3rem;
+    margin: 0;
+    line-height: 4rem;
+    padding: 0;
+  }
+
+  p {
+    padding: 0;
+    margin: 0 auto;
+    font-size: 1.5rem;
+    max-width: 800px;
+  }
+}
+
+@media (min-width: 768px) {
+
+  .plain-header {
+    padding: 10rem 0 6rem;
+    h1 {
+      font-size: 4rem;
+      margin-bottom: 3rem;
+    }
+
+    p.lead {
+      font-size: 1.5rem;
+      opacity: 0.8;
+      font-weight: 500;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* ---------------------- Featured On Panel ---------------------- */
 
 .panel-featured-on {
@@ -197,28 +287,34 @@
 
 
 
+
+
+
+
+
+
+
+
 /* ---------------------- Testimonial Panel ---------------------- */
 
 .panel-testimonial {
-  background: darken($color-primary, 10%);
-  padding: 4rem 0;
+  background: $color-primary;
+  padding: 7em 0 8rem;
   margin: 0;
   color: white;
-  blockquote {
-    display: inline;
-    width: 70%;
-  }
+  text-align: center;
+  font-family: 'Merriweather', serif;
+
   p {
-    font-size: 1.5rem;
-    width: 70%;
-    display: inline-block;
+    font-size: 2.25rem;
+    line-height: 3.25rem;
+    max-width: 760px;
+    margin: 0 auto;
   }
   img {
-    float: left;
-    margin: 0 2rem 2rem 0;
-    border: solid 2px white;
-    width: 20%;
-    height: auto;
+
+    margin: 0 2rem 1.5rem 0;
+    max-width: 240px;
   }
 }
 
@@ -236,19 +332,36 @@
 
 
 
+
+
+
+
+
+
+
+
 /* ---------------------- Product Info Panel ---------------------- */
 
 .product-intro-panel {
   .product-info {
-    padding: 2rem 0;
+    padding: 3em 0;
     text-align: center;
     h3 {
       margin: 2rem 0 1rem;
-      font-size: 1.15rem;
+      font-size: 1.35rem;
+      line-height: 2rem;
       font-weight: 600;
     }
   }
 }
+
+
+
+
+
+
+
+
 
 
 
