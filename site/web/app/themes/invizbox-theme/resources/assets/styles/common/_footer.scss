@@ -1,0 +1,129 @@
+footer {
+  color: $color-black;
+  padding: 5rem 3rem;
+  background: $color-grey;
+  hr {
+    margin: 1rem 0;
+  }
+  .form-group {
+    display: inline-block;
+  }
+  h5 {
+    font-size: 1rem;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+  }
+  .menu {
+    padding-left: 0;
+    list-style: none;
+    margin-bottom: 3rem;
+    li {
+      margin-bottom: 0.5rem;
+      a {
+        color: $color-black;
+        font-size: 0.85rem;
+        font-weight: 500;
+      }
+    }
+  }
+  .social {
+    text-align: center;
+    h3 {
+      font-size: 1rem;
+      text-transform: uppercase;
+      margin: 0;
+      line-height: 1.5rem;
+      font-weight: 500;
+    }
+    p.tagline {
+      font-size: 0.8rem;
+      opacity: 0.75;
+      font-weight: normal;
+      line-height: 1.5rem;
+    }
+    .social-icons {
+      margin: 1rem 0;
+      img {
+        max-width: 40px;
+        margin: 0 0.5rem;
+        opacity: 0.35;
+        &:hover {
+          opacity: 0.55;
+        }
+      }
+    }
+  }
+  .footer-base {
+    margin: 2rem 0;
+    font-size: 0.75rem;
+    opacity: 0.5;
+    border-top: solid 1px $color-border;
+    padding-top: 1rem;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+/* ---------------------- Contact Form  ---------------------- */
+
+div.wpcf7 {
+  margin: 0.5rem 0 2rem;
+  p {
+    margin: 0 0 0.5rem;
+  }
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    background-color: #fff;
+    margin: 0;
+    height: $h-input-lg;
+    line-height: $h-input-lg;
+    color: $color-black;
+    width: calc(100% - 100px);
+    border: solid 1px $color-border;
+    padding: 0 1rem;
+    font-weight: 300;
+    font-size: 0.85rem;
+  }
+  input[type="submit"] {
+    height: $h-input-lg;
+    border: 0;
+    margin-left: -10px;
+    background: rgba($color-black, 0.35);
+    color: white;
+    width: 80px;
+    padding: 0;
+  }
+}
+
+
+@media (min-width: 768px) {
+
+
+  footer {
+    .social {
+      padding-top: 2rem;
+      border-top: solid 1px $color-border;
+      text-align: left;
+      .social-icons {
+        margin: 0;
+        text-align: right;
+        img {
+          max-width: 48px;
+        }
+      }
+    }
+
+    div.wpcf7 {
+      margin: 0;
+    }
+  }
+}
