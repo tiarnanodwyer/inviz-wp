@@ -1,4 +1,5 @@
 <section class="jumbotron jumbotron-homepage" style="background-image: url(<?php the_field( 'jumbotron' ); ?>);">
+	<span class="hero-testimonial"><img src="<?php the_field( 'hero_testimonial' ); ?>" alt=""></span>
 	<div class="container">
 		<span class="jumbotron-notification">
 			<?php the_field( 'jumbotron_notification' ); ?>
@@ -220,8 +221,9 @@
 				<?php if( have_rows('testimonial', 134) ): ?>
 				<?php while( have_rows('testimonial', 134) ): the_row(); ?>
 				<img src="<?php echo $image; ?>" alt="">
-				<p><?php the_sub_field('content'); ?></p>
-				<p><?php the_sub_field('details'); ?></p>
+				<p><?php the_sub_field('content'); ?>
+								<span><?php the_sub_field('details'); ?></span></p>
+
 			<?php endwhile; ?>
 		<?php endif; ?>
 	</div>

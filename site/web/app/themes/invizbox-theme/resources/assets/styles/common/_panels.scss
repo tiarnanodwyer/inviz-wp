@@ -6,17 +6,6 @@
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
 /* ---------------------- Panel Features ---------------------- */
 
 .panel-features {
@@ -44,17 +33,6 @@
     }
   }
 }
-
-
-
-
-
-
-
-
-
-
-
 
 
 /* ---------------------- Bucket Detail ---------------------- */
@@ -110,17 +88,6 @@
     }
   }
 }
-
-
-
-
-
-
-
-
-
-
-
 
 
 /* ---------------------- Buckets ---------------------- */
@@ -193,17 +160,6 @@
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
 /* ---------------------- Plain Header ---------------------- */
 
 .plain-header {
@@ -220,7 +176,6 @@
     line-height: 4rem;
     padding: 0;
   }
-
   p {
     padding: 0;
     margin: 0 auto;
@@ -230,14 +185,12 @@
 }
 
 @media (min-width: 768px) {
-
   .plain-header {
     padding: 10rem 0 6rem;
     h1 {
-      font-size: 4rem;
-      margin-bottom: 3rem;
+      font-size: 3rem;
+      margin-bottom: 1rem;
     }
-
     p.lead {
       font-size: 1.5rem;
       opacity: 0.8;
@@ -249,17 +202,88 @@
 }
 
 
+/* ---------------------- Plain Header Left ---------------------- */
+
+.plain-header-left {
+  background-color: rgba($color-primary, 0.05);
+  .container {
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: center;
+    background-size: 0;
+  }
+  .details {
+    padding: 8rem 0;
+    h1 {
+      font-size: 3rem;
+      margin: 0;
+      line-height: 4rem;
+      padding: 0;
+    }
+    p {
+      padding: 0;
+      margin: 0;
+      font-size: 1.5rem;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .plain-header-left {
+    .container {
+      background-size: auto;
+    }
+    .details {
+      padding: 14rem 0 10rem;
+      max-width: 70%;
+      h1 {
+        font-size: 3.5rem;
+        line-height: 4.25rem;
+        margin-bottom: 1rem;
+      }
+      p {
+        font-size: 1.5rem;
+        opacity: 0.8;
+        font-weight: 500;
+      }
+    }
+  }
+}
 
 
+/* ---------------------- General Pages ---------------------- */
 
 
+.general-content {
+  margin: 7rem 0 5rem;
+  padding: 3rem 0;
+  h1 {
+    margin-bottom: 2rem;
+  }
+  h2 {
+    font-size: 1.35rem;
+    max-width: 800px;
+    margin: 0 auto 1rem;
+    font-weight: normal;
+    color: rgba($color-black, 0.75);
+  }
+}
 
 
+/* ---------------------- Team Panel ---------------------- */
 
-
-
-
-
+.team-panel {
+  margin: -2rem 0 3rem;
+  .team-info {
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    h3 {
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin: 2rem 0 1rem;
+    }
+  }
+}
 
 
 /* ---------------------- Featured On Panel ---------------------- */
@@ -284,37 +308,29 @@
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
 /* ---------------------- Testimonial Panel ---------------------- */
 
 .panel-testimonial {
   background: $color-primary;
-  padding: 7em 0 8rem;
+  padding: 8em 0 9rem;
   margin: 0;
   color: white;
   text-align: center;
   font-family: 'Merriweather', serif;
-
   p {
-    font-size: 2.25rem;
+    font-size: 2.5rem;
     line-height: 3.25rem;
-    max-width: 760px;
     margin: 0 auto;
+    max-width: 800px;
+    span {
+      display: block;
+      font-size: 0.85rem;
+      text-transform: uppercase;
+    }
   }
   img {
-
-    margin: 0 2rem 1.5rem 0;
-    max-width: 240px;
+    margin: 0 2rem 1rem 0;
+    max-width: 200px;
   }
 }
 
@@ -329,15 +345,23 @@
 }
 
 
+/* ---------------------- Stat Box ---------------------- */
 
-
-
-
-
-
-
-
-
+.stat-box {
+  font-family: 'Merriweather', serif;
+  text-align: center;
+  font-size: 2.25rem;
+  margin: 5rem auto;
+  max-width: 800px;
+  p {
+    margin-bottom: 3rem;
+    span {
+      background: rgba($color-primary, 0.1);
+      text-underline-position: under;
+      text-decoration: underline solid $color-primary !important;
+    }
+  }
+}
 
 
 /* ---------------------- Product Info Panel ---------------------- */
@@ -354,33 +378,6 @@
     }
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /* ---------------------- Pricing Panel ---------------------- */
@@ -450,7 +447,6 @@
     }
   }
 }
-
 
 @media (min-width: 768px) {
   .container-pricing {

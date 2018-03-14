@@ -1,120 +1,3 @@
-// .navbar {
-//   background: $color-black;
-//   height: 56px;
-//   a,
-//   a.dropdown-toggle.nav-link {
-//     color: $color-black;
-//   }
-//   .navbar-brand {
-//     background-image: url("../images/logo-invizbox-w.png");
-//     height: 35px;
-//     width: 180px;
-//     background-repeat: no-repeat;
-//     padding: 0;
-//   }
-//   .navbar-toggler {
-//     background: red;
-//     border-radius: 0;
-//   }
-// }
-// /* ---------------------- Off Canvas ---------------------- */
-// @media (max-width: 767.98px) {
-//   .offcanvas-collapse {
-//     position: fixed;
-//     top: 56px;
-//     bottom: 0;
-//     width: 100%;
-//     padding-right: 1rem;
-//     padding-left: 1rem;
-//     overflow-y: auto;
-//     background-color: $color-black;
-//     transition: -webkit-transform 0.3s ease-in-out;
-//     transition: transform 0.3s ease-in-out;
-//     transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
-//     -webkit-transform: translateX(100%);
-//     transform: translateX(100%);
-//     a,
-//     a.dropdown-toggle.nav-link,
-//     a.dropdown-toggle,
-//     a.dropdown-toggle {
-//       color: white;
-//     }
-//   }
-//   .offcanvas-collapse.open {
-//     -webkit-transform: translateX(-1rem);
-//     transform: translateX(-1rem);
-//   }
-// }
-// @media (min-width: 768px) {
-//   .navbar {
-//     background: none;
-//     padding-top: 4rem;
-//     padding-bottom: 4rem;
-//     .nav-link,
-//     .banner .nav a {
-//       display: block;
-//       padding: 1rem !important;
-//     }
-//     .navbar-brand {
-//       background-image: url("../images/logo-invizbox.png");
-//     }
-//     &.scrolled {
-//       background: white !important;
-//       border-bottom: solid 1px $color-border;
-//       transition: 0.4s;
-//       box-shadow: 0 3px 3px rgba($color-black, 0.05);
-//       padding-top: 0;
-//       padding-bottom: 0;
-//       .navbar-brand {
-//         background-image: url("../images/logo-invizbox.png");
-//       }
-//       .nav-link,
-//       a.dropdown-toggle.nav-link {
-//         color: $color-black;
-//       }
-//     }
-//     .wpmenucart-display-standard {
-//       padding: 1rem 0;
-//     }
-//     .wpmenucart-contents {
-//       padding: 0.5rem 1rem !important;
-//       background: $color-green;
-//       color: white;
-//       border-radius: 30px;
-//       &:hover {
-//         background: lighten($color-green, 10%);
-//         text-decoration: none;
-//       }
-//     }
-//   }
-// }
-// /* ---------------------- Shop ---------------------- */
-// @media (min-width: 768px) {
-//   .woocommerce,
-//   .woocommerce-cart,
-//   .woocommerce-checkout {
-//     .navbar {
-//       background: white !important;
-//       border-bottom: solid 1px $color-border;
-//       transition: 0.4s;
-//       box-shadow: 0 3px 3px rgba($color-black, 0.05);
-//       padding-top: 0;
-//       padding-bottom: 0;
-//     }
-//   }
-// }
-// /* ---------------------- Homepage ---------------------- */
-// .template-homepage {
-//   .navbar {
-//     .navbar-brand {
-//       background-image: url("../images/logo-invizbox-w.png");
-//     }
-//     a,
-//     a.dropdown-toggle.nav-link {
-//       color: white;
-//     }
-//   }
-// }
 
 /* ------------------------ Navbar ------------------------ */
 
@@ -137,6 +20,7 @@
 
 .nav-link {
   color: $color-black;
+  font-weight: 500;
 }
 
 
@@ -283,6 +167,7 @@
     transition: 0.3s;
   }
   /* ------------------------ Navbar Scrolled ------------------------ */
+  .woocommerce-page .navbar,
   .navbar.scrolled {
     background: white;
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);

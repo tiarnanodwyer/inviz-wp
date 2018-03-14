@@ -11,7 +11,7 @@
 </div>
 
 
-<div class="ip-address-why" class="jumbotron-heading"><p>Your IP is <strong><?php the_field( 'ip' ); ?></strong>Let's keep it secure!</p></div>
+<!-- <div class="ip-address-why" class="jumbotron-heading"><p>Your IP is <strong><?php the_field( 'ip' ); ?></strong>Let's keep it secure!</p></div> -->
 
 <!-- Product Intro Panel-->
 <div class="product-intro-panel">
@@ -35,12 +35,28 @@
 			</div>
 		<?php endwhile; ?>
 	</div>
-</div></div>
+</div>
+</div>
+
 
 <div class="text-center">
 	<a href="" class="btn btn-cta-rounded-lg">Order your InvizBox</a>
 	<p>30 Day money back guarantee</p>
 </div>
+
+<!-- Stat Box -->
+<div class="stat-box">
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<?php the_field( 'stat_box' ); ?>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
 <!-- Product Panel-->
 <div class="container">
 	<hr>
@@ -58,7 +74,6 @@
 		$image = get_sub_field( 'image' );
 		$link_learn = get_sub_field( 'link_learn' );
 		$link_order = get_sub_field( 'link_order' );
-		$detail = get_sub_field( 'detail_list' );
 		?>
 		<div class="col-md-6" role="presentation"<?php 
 		if (!$count) {
@@ -68,9 +83,7 @@
 		<div class="products-panel">
 			<img src="<?php echo $image; ?>" alt="">
 			<h5><?php echo $title; ?></h5>
-			<p><?php echo $text; ?></p>
-			<div><?php echo $detail; ?></div>
-			<a href="<?php echo $link_learn; ?>" class="btn btn-secondary">Learn More</a>
+			<div><?php echo $text; ?></div>
 			<a href="<?php echo $link_order; ?>" class="btn btn-primary">Order Now</a>
 		</div>
 	</div>
@@ -202,8 +215,9 @@
 				<?php if( have_rows('testimonial', 134) ): ?>
 				<?php while( have_rows('testimonial', 134) ): the_row(); ?>
 				<img src="<?php the_sub_field('image'); ?>" alt="">
-				<p>&quot;<?php the_sub_field('content'); ?>&quot;</p>
-				<p><?php the_sub_field('details'); ?></p>
+				<p>&quot;<?php the_sub_field('content'); ?>&quot;
+				<span><?php the_sub_field('details'); ?></span>
+				</p>
 			<?php endwhile; ?>
 		<?php endif; ?>
 	</div>

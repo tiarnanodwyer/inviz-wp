@@ -79,19 +79,31 @@
   &.jumbotron-homepage {
     background-color: $color-black;
     color: white;
+
+    span.hero-testimonial {
+      position: absolute;
+      right: 40px;
+      bottom: 40px;
+      display: none;
+    }
   }
 }
 
 @media (min-width: 768px) {
   .jumbotron {
-
+    background-size: auto !important;
 
     /* ---------------------- Homepage  ---------------------- */
     &.jumbotron-homepage {
+
+      span.hero-testimonial {
+        display: block;
+      }
+
       .jumbotron-detail {
         padding: 12rem 0 14rem;
         text-align: left;
-        max-width: 60%;
+        max-width: 800px;
         h1 {
           font-size: 3.5rem;
           line-height: 4.25rem;
@@ -118,46 +130,3 @@
     }
   }
 }
-
-// .jumbotron {
-//   background-size: auto !important;
-//   .jumbotron-detail {
-//     padding: 12rem 0;
-//     h1 {
-//       font-size: 3.25rem;
-//       line-height: 4.25rem;
-//     }
-//     p.lead {
-//       font-size: 1.5rem;
-//     }
-//   }
-//   .jumbotron-detail-product {
-//     padding: 11rem 0;
-//     text-align: left;
-//     p.product {
-//       font-size: 1rem;
-//       text-transform: uppercase;
-//       display: block;
-//     }
-//     h1 {
-//       font-size: 3rem;
-//       line-height: 4rem;
-//       max-width: 600px;
-//     }
-//     p.lead {
-//       font-size: 1.25rem;
-//       line-height: 2rem;
-//       max-width: 600px;
-//       margin: 1rem 0;
-//     }
-//   }
-// }
-// .jumbotron-detail-general {
-//   padding: 10em 0 5rem;
-//   max-width: auto;
-//   text-align: center;
-//   h1 {
-//     color: white;
-//     font-size: 3.5rem;
-//   }
-// }

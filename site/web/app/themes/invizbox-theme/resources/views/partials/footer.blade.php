@@ -1,6 +1,7 @@
-<footer class="content-info">
+<footer>
   <div class="container">
-    <div class="row">
+    <div class="d-none d-sm-block">
+          <div class="row">
       <div class="col-12 col-sm-3">
         <h5>Products</h5>
         @if (has_nav_menu('secondary_navigation'))
@@ -20,23 +21,31 @@
         @endif
       </div>
     </div>
-    <hr>
-    <div class="row">
-      <div class="col-12 col-sm-6">
-        <?php echo do_shortcode( '[contact-form-7 id="101" title="Newsletter Form"]' ); ?>
-      </div>
-      <div class="col-12 col-sm-6">
-        <div class="social-icons text-right">
-          <img class="style-svg" alt="alt-text" src="http://invizbox.test/app/uploads/2017/12/facebook-app-logo.svg" />
-          <img class="style-svg" alt="alt-text" src="http://invizbox.test/app/uploads/2017/12/google-plus-logo-on-black-background.svg" />
-          <img class="style-svg" alt="alt-text" src="http://invizbox.test/app/uploads/2017/12/twitter-logo-on-black-background.svg" />
+    </div>   
+
+    <div class="social">
+        <div class="row align-items-center">
+        <div class="col-md-4">
+          <h3>Connect with us</h3>
+          <p class="tagline">Get the latest news and details on any firmware updates. We don't share any contact inforamtion. </p>
+        </div>
+        <div class="col-md-5">
+          <?php echo do_shortcode( '[contact-form-7 id="500" title="Newsletter Form"]' ); ?>
+        </div>
+        <div class="col-md-3">
+          <div class="social-icons">
+            <img src="<?= get_template_directory_uri(); ?>/assets/images/social-twitter.png">
+            <img src="<?= get_template_directory_uri(); ?>/assets/images/social-google.png">
+            <img src="<?= get_template_directory_uri(); ?>/assets/images/social-facebook.png">
+          </div>
         </div>
       </div>
     </div>
-    <hr>
-    <div class="row">
-      <div class="col-12 col-sm-6">© 2017 InvizBox Ltd.</div>
-      <div class="col-12 col-sm-6 text-right">Terms and Conditions</div>
+    <div class="footer-base">
+      <div class="row">
+        <div class="col-6">© 2017 InvizBox Ltd.</div>
+        <div class="col-6 text-right">Terms and Conditions</div>
+      </div>
     </div>
   </div>
 </footer>

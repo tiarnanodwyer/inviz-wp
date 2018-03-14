@@ -1,16 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700');
 @import url('https://fonts.googleapis.com/css?family=Merriweather:300,400,700');
-
 body {
   font-size: 16px;
   color: $color-black;
   font-family: 'Montserrat', sans-serif;
 }
-
-
-
-
-
 
 
 
@@ -46,14 +40,14 @@ h2.sub-capital {
 }
 
 p {
-  font-weight: 500;
+  font-weight: 400;
 }
 
 p.tagline {
   font-size: 1.35rem;
   max-width: 800px;
   margin: 0 auto 1rem;
-  font-weight: 500;
+  font-weight: 400;
   color: rgba($color-black, 0.75);
 }
 
@@ -74,16 +68,10 @@ a {
   color: $color-primary;
 }
 
-
-
-
 hr {
   border-top: solid 1px $color-border;
-  margin: 4rem;
+  margin: 4rem 0;
 }
-
-
-
 
 
 
@@ -120,12 +108,6 @@ hr {
 
 
 
-
-
-
-
-
-
 /* ---------------------- Homepage ---------------------- */
 
 .products-panel-holder {
@@ -136,8 +118,8 @@ hr {
       margin: 2rem 0 0;
     }
     h5 {
-      font-size: 1.65rem;
-      font-weight: 600;
+      font-size: 1.5rem;
+      font-weight: 700;
       margin-bottom: 1rem;
     }
     p {
@@ -153,28 +135,23 @@ hr {
     a {
       margin-top: 1rem;
     }
-
     ul {
       list-style: none;
       padding: 0;
-      margin: 0;
+      margin: 2rem 0;
     }
-
     li {
-      padding: 0.5rem 0;
-      border-top: solid 1px $color-border;
+      padding: 0.5rem 1rem;
+      font-size: 0.85rem;
+      margin: 0 -1rem;
+      background: $color-grey;
+
+      &:nth-of-type(2n) {
+        background: white;
+      }
     }
   }
 }
-
-
-
-
-
-
-
-
-
 
 
 
@@ -192,15 +169,12 @@ hr {
   padding: 0.25rem;
 }
 
-
 .ip-address-why {
   text-align: center;
   background: rgba($color-primary, 0.1);
   margin: 1.5rem auto 3rem;
   padding: 0.5rem 1rem;
   width: fit-content;
-
-
   p {
     margin: 0;
     font-size: 1.25rem;
@@ -208,14 +182,6 @@ hr {
     color: darken($color-primary, 10%);
   }
 }
-
-
-
-
-
-
-
-
 
 
 
@@ -234,11 +200,6 @@ hr {
     margin-top: 0;
   }
 }
-
-
-
-
-
 
 
 
@@ -268,11 +229,6 @@ hr {
     vertical-align: middle;
   }
 }
-
-
-
-
-
 
 
 
@@ -318,11 +274,6 @@ hr {
 
 
 
-
-
-
-
-
 /* ---------------------- Login ---------------------- */
 
 .form-signin {
@@ -347,21 +298,11 @@ hr {
 
 
 
-
-
-
-
-
 /* ---------------------- General Page ---------------------- */
 
 .general {
   margin: 5rem 0;
 }
-
-
-
-
-
 
 
 
@@ -430,94 +371,6 @@ hr {
 
 
 
-
-/* ---------------------- Footer ---------------------- */
-
-footer {
-  color: $color-black;
-  padding: 4rem 0 8rem;
-  background: $color-grey;
-  .form-group {
-    display: inline-block;
-  }
-  .style-svg {
-    fill: $color-black;
-    height: $h-input-lg;
-    width: auto;
-  }
-  h5 {
-    font-size: 0.75rem;
-    text-transform: uppercase;
-    opacity: 0.65;
-    margin-bottom: 2rem;
-  }
-  .menu {
-    padding-left: 0;
-    list-style: none;
-    li {
-      margin-bottom: 1rem;
-      a {
-        color: $color-black;
-      }
-    }
-  }
-  .footer-base {
-    margin: 3rem 0 1rem;
-    padding: 1rem;
-    font-size: 0.8rem;
-    border-top: solid 1px rgba(255, 255, 255, 0.5);
-    opacity: 0.5;
-  }
-}
-
-
-
-
-
-
-
-
-
-
-
-/* ---------------------- Contact Form  ---------------------- */
-
-.wpcf7 {
-  label {
-    font-size: 1.25rem;
-    margin: 0;
-    font-weight: 500;
-  }
-  p {
-    margin: 0 0 0.5rem;
-  }
-  input[type="text"],
-  input[type="email"],
-  textarea {
-    background-color: #fff;
-    height: $h-input-lg;
-    color: #000;
-    width: calc(100% - 120px);
-  }
-  input[type="submit"] {
-    height: $h-input-lg;
-    margin-left: -1px;
-    background: $color-primary;
-    color: white;
-    width: 120px;
-  }
-}
-
-
-
-
-
-
-
-
-
-
-
 /* ---------------------- Media Queries ---------------------- */
 
 
@@ -543,17 +396,15 @@ footer {
     line-height: 3.75rem;
   }
   h2 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     line-height: 2.5rem;
-    margin: 5rem 0 1.5rem;
-    font-weight: 600;
+    margin: 5rem 0 1rem;
   }
   h2.caps {
     font-size: 1.25rem;
     text-transform: uppercase;
     margin-bottom: 0;
   }
-
   /* ---------------------- Homepage ---------------------- */
   .products-panel-holder {
     margin-bottom: 3.5rem;
