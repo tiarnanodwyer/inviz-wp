@@ -70,7 +70,9 @@
     "wpackagist-plugin/woocommerce-menu-bar-cart": "dev-trunk",
     "wpackagist-plugin/woocommerce-direct-variation-link": "dev-trunk",
     "wpackagist-plugin/wc-variations-radio-buttons": "dev-trunk",
-    "wpackagist-plugin/cookie-notice": "dev-trunk"
+    "wpackagist-plugin/uk-cookie-consent": "dev-trunk",
+    "wpackagist-plugin/responsive-youtube-vimeo-popup": "dev-trunk"
+
 
   },
   "require-dev": {

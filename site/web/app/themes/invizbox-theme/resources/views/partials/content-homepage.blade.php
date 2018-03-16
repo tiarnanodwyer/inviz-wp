@@ -8,7 +8,7 @@
 			<h1 class="jumbotron-heading"><?php the_field( 'hero_title' ); ?></h1>
 			<p class="lead"><?php the_field( 'hero_tagline' ); ?></p>
 			<a href="" class="btn btn-secondary">Learn More</a>
-			<a href="" class="btn btn-primary">Order Nowsss</a>
+			<a href="" class="btn btn-primary">Order Now</a>
 		</div>
 	</div>
 </section>
@@ -81,6 +81,9 @@
 <?php endif; ?>
 
 
+
+
+
 <!-- Features Panel-->
 <?php if ( have_rows( 'features' ) ): ?>
 	<div class="panel-features">
@@ -111,6 +114,31 @@
 	</div>
 </div>
 <?php endif; ?>
+
+<!-- Video Panel-->
+<div class="video-panel">
+<div class="container">
+	<?php	
+// vars
+$video = get_field('video');	
+
+if( $video ): ?>
+<div id="video">
+	<div class="row">
+		<div class="col-sm-6">
+			<h2><?php echo $video['title']; ?></h2>
+			<p class="tagline"><?php echo $video['content']; ?></p>
+		</div>
+		<div class="col-sm-6">
+			<?php echo $video['video_file']; ?></div>
+		</div>
+	</div>
+<?php endif; ?>
+</div>
+
+</div>
+
+
 
 <!-- Bucket Panels-->
 <?php if ( have_rows( 'bucket_detail' ) ): ?>
@@ -161,7 +189,7 @@
 						<div class="media-body">
 							<img src="<?= get_template_directory_uri(); ?>/assets/images/tick.png">
 							<h5 class="mt-0">Open Source</h5>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi omnis eum.</p>
+							<p>allows other security experts to examine our code, ensuring the best security</p>
 						</div>
 					</div>
 					<div class="col-6">
@@ -175,14 +203,14 @@
 						<div class="media-body">
 							<img src="<?= get_template_directory_uri(); ?>/assets/images/tick.png">
 							<h5 class="mt-0">Auto Updates</h5>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi omnis eum.</p>
+							<p>Secure, regualr and automatic updates - we have already pushed over 20 updates!</p>
 						</div>
 					</div>
 					<div class="col-6">
 						<div class="media-body">
 							<img src="<?= get_template_directory_uri(); ?>/assets/images/tick.png">
 							<h5 class="mt-0">Secure HTTPS</h5>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi omnis eum.</p>
+							<p>InvizBox will automatically connect you to exisitng HTTPS if available</p>
 						</div>
 					</div>
 				</div>
@@ -220,10 +248,10 @@
 			<div class="col-12">
 				<?php if( have_rows('testimonial', 134) ): ?>
 				<?php while( have_rows('testimonial', 134) ): the_row(); ?>
-				<img src="<?php echo $image; ?>" alt="">
-				<p><?php the_sub_field('content'); ?>
-								<span><?php the_sub_field('details'); ?></span></p>
-
+				<img src="<?php the_sub_field('image'); ?>" alt="">
+				<p>&quot;<?php the_sub_field('content'); ?>&quot;
+					<span><?php the_sub_field('details'); ?></span>
+				</p>
 			<?php endwhile; ?>
 		<?php endif; ?>
 	</div>

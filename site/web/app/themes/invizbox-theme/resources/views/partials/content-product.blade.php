@@ -241,9 +241,16 @@
 <div class="panel-testimonial">
 	<div class="container">
 		<div class="row justify-content-center">
-			<div class="col-8">
-				<?php do_action( 'woothemes_testimonials', array( 'limit' => 1, 'category' => 'invizbox-pro' )  ); ?>
-			</div>
-		</div>
+			<div class="col-12">
+				<?php if( have_rows('testimonial', 134) ): ?>
+				<?php while( have_rows('testimonial', 134) ): the_row(); ?>
+				<img src="<?php the_sub_field('image'); ?>" alt="">
+				<p>&quot;<?php the_sub_field('content'); ?>&quot;
+				<span><?php the_sub_field('details'); ?></span>
+				</p>
+			<?php endwhile; ?>
+		<?php endif; ?>
 	</div>
+</div>
+</div>
 </div>

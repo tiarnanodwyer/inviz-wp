@@ -31,6 +31,9 @@
   .col-2 {
     max-width: none;
   }
+  hr {
+    margin: 1rem 0;
+  }
   h2 {
     font-size: 2rem;
     margin: 3rem 0;
@@ -51,6 +54,13 @@
     }
   }
   /* ---------------------- Woo Product Page ---------------------- */
+  .single_variation_wrap {
+
+    background: red;
+    .quantity .qty {
+      display: none;
+    }
+  }
   div.product .product_title {
     clear: none;
     margin-top: 2rem;
@@ -159,6 +169,9 @@
 
 
 
+
+
+
 /* ---------------------- Product Page ---------------------- */
 
 .single-product {
@@ -170,6 +183,9 @@
 .woocommerce-checkout {
   margin-top: 8px;
 }
+
+
+
 
 
 
@@ -191,6 +207,9 @@
   border-radius: 5px;
   margin-bottom: 10rem;
 }
+
+
+
 
 
 

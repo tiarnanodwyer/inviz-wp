@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "09768e0aeeaab79b9309a89dee7791ab",
+    "content-hash": "10ed05d2dd87e22eb8a27a29badbdc8e",
     "packages": [
         {
             "name": "advanced-custom-fields/advanced-custom-fields-pro",
@@ -484,7 +484,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/akismet.zip?timestamp=1519053915",
+                "url": "https://downloads.wordpress.org/plugin/akismet.zip?timestamp=1513615735",
                 "reference": null,
                 "shasum": null
             },
@@ -493,7 +493,7 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/akismet/",
-            "time": "2018-02-19T15:25:15+00:00"
+            "time": "2017-12-18T16:48:55+00:00"
         },
         {
             "name": "wpackagist-plugin/contact-form-7",
@@ -516,27 +516,6 @@
             "homepage": "https://wordpress.org/plugins/contact-form-7/"
         },
         {
-            "name": "wpackagist-plugin/cookie-notice",
-            "version": "dev-trunk",
-            "source": {
-                "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/cookie-notice/",
-                "reference": "trunk"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/cookie-notice.zip?timestamp=1516364916",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/cookie-notice/",
-            "time": "2018-01-19T12:28:36+00:00"
-        },
-        {
             "name": "wpackagist-plugin/duplicate-page",
             "version": "dev-trunk",
             "source": {
@@ -546,7 +525,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/duplicate-page.zip?timestamp=1519449293",
+                "url": "https://downloads.wordpress.org/plugin/duplicate-page.zip?timestamp=1512132276",
                 "reference": null,
                 "shasum": null
             },
@@ -555,7 +534,7 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/duplicate-page/",
-            "time": "2018-02-24T05:14:53+00:00"
+            "time": "2017-12-01T12:44:36+00:00"
         },
         {
             "name": "wpackagist-plugin/font-awesome",
@@ -588,7 +567,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/mailchimp-for-wp.zip?timestamp=1519203357",
+                "url": "https://downloads.wordpress.org/plugin/mailchimp-for-wp.zip?timestamp=1514448589",
                 "reference": null,
                 "shasum": null
             },
@@ -597,19 +576,19 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/mailchimp-for-wp/",
-            "time": "2018-02-21T08:55:57+00:00"
+            "time": "2017-12-28T08:09:49+00:00"
         },
         {
-            "name": "wpackagist-plugin/strong-testimonials",
+            "name": "wpackagist-plugin/responsive-youtube-vimeo-popup",
             "version": "dev-trunk",
             "source": {
                 "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/strong-testimonials/",
+                "url": "https://plugins.svn.wordpress.org/responsive-youtube-vimeo-popup/",
                 "reference": "trunk"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/strong-testimonials.zip?timestamp=1518361948",
+                "url": "https://downloads.wordpress.org/plugin/responsive-youtube-vimeo-popup.zip?timestamp=1499510666",
                 "reference": null,
                 "shasum": null
             },
@@ -617,8 +596,8 @@
                 "composer/installers": "~1.0"
             },
             "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/strong-testimonials/",
-            "time": "2018-02-11T15:12:28+00:00"
+            "homepage": "https://wordpress.org/plugins/responsive-youtube-vimeo-popup/",
+            "time": "2017-07-08T11:44:26+00:00"
         },
         {
             "name": "wpackagist-plugin/svg-support",
@@ -651,7 +630,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/testimonials-by-woothemes.zip?timestamp=1519145967",
+                "url": "https://downloads.wordpress.org/plugin/testimonials-by-woothemes.zip?timestamp=1446628368",
                 "reference": null,
                 "shasum": null
             },
@@ -660,7 +639,28 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/testimonials-by-woothemes/",
-            "time": "2018-02-20T16:59:27+00:00"
+            "time": "2015-11-04T09:12:48+00:00"
+        },
+        {
+            "name": "wpackagist-plugin/uk-cookie-consent",
+            "version": "dev-trunk",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/uk-cookie-consent/",
+                "reference": "trunk"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/uk-cookie-consent.zip?timestamp=1517915340",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/uk-cookie-consent/",
+            "time": "2018-02-06T11:09:00+00:00"
         },
         {
             "name": "wpackagist-plugin/wc-variations-radio-buttons",
@@ -693,7 +693,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/woocommerce.zip?timestamp=1519752205",
+                "url": "https://downloads.wordpress.org/plugin/woocommerce.zip?timestamp=1517392767",
                 "reference": null,
                 "shasum": null
             },
@@ -702,7 +702,7 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/woocommerce/",
-            "time": "2018-02-27T17:23:25+00:00"
+            "time": "2018-01-31T09:59:27+00:00"
         },
         {
             "name": "wpackagist-plugin/woocommerce-direct-variation-link",
@@ -833,8 +833,8 @@
         "wpackagist-plugin/woocommerce-menu-bar-cart": 20,
         "wpackagist-plugin/woocommerce-direct-variation-link": 20,
         "wpackagist-plugin/wc-variations-radio-buttons": 20,
-        "wpackagist-plugin/cookie-notice": 20,
-        "wpackagist-plugin/strong-testimonials": 20
+        "wpackagist-plugin/uk-cookie-consent": 20,
+        "wpackagist-plugin/responsive-youtube-vimeo-popup": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
