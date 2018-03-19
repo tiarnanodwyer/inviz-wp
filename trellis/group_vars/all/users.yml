@@ -7,13 +7,13 @@ users:
     groups:
       - "{{ web_group }}"
     keys:
-      - https://github.com/tiarnanodwyer.keys
+      - https://github.com/xdoty.keys
       # - https://github.com/username.keys
   - name: "{{ admin_user }}"
     groups:
       - sudo
     keys:
-      - https://github.com/tiarnanodwyer.keys
+      - https://github.com/xdoty.keys
       # - https://github.com/username.keys
 
 web_user: web
