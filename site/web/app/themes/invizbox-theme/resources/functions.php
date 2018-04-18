@@ -59,13 +59,6 @@ array_map(function ($file) use ($sage_error) {
  * Remove Tabs
  */
 
-add_filter( 'woocommerce_product_tabs', 'woo_remove_product_tabs', 98 );
-
-function woo_remove_product_tabs( $tabs ) {
-    unset( $tabs['additional_information'] ); 
-    return $tabs;
-
-};
 
 
 
@@ -89,6 +82,28 @@ function custom_override_checkout_fields( $fields ) {
     unset($fields['billing']['billing_phone']);
     return $fields;
 }
+
+    $catalog = array(
+        'width'     => '400',   // px
+        'height'    => '400',   // px
+        'crop'      => 1        // true
+    );
+    $single = array(
+        'width'     => '600',   // px
+        'height'    => '600',   // px
+        'crop'      => 1        // true
+    );
+    $thumbnail = array(
+        'width'     => '120',   // px
+        'height'    => '120',   // px
+        'crop'      => 0        // false
+    );
+    // Image sizes
+    update_option( 'shop_catalog_image_size', $catalog );       // Product category thumbs
+    update_option( 'shop_single_image_size', $single );         // Single product image
+    update_option( 'shop_thumbnail_image_size', $thumbnail );   // Image gallery thumbs
+
+
 
 
 

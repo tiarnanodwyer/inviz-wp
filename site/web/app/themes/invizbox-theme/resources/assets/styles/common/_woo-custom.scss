@@ -56,7 +56,6 @@
   /* ---------------------- Woo Product Page ---------------------- */
   .single_variation_wrap {
 
-    background: red;
     .quantity .qty {
       display: none;
     }
@@ -154,6 +153,7 @@
   form .form-row label {
     line-height: 2;
     margin: 0.5rem 0 0;
+    font-weight: 500;
   }
 }
 
@@ -166,6 +166,13 @@
   color: $color-primary;
 }
 
+.woocommerce form .form-row .required {
+  color: red;
+  font-weight: 600;
+  border: 0;
+  text-decoration: none;
+  font-size: 0.75rem;
+}
 
 
 
@@ -183,6 +190,7 @@
 .woocommerce-checkout {
   margin-top: 8px;
 }
+
 
 
 
@@ -209,8 +217,13 @@
 }
 
 
+.woocommerce-info {
+  border-top-color: $color-primary;
+}
 
-
+.woocommerce-info::before {
+  color: $color-primary;
+}
 
 
 
