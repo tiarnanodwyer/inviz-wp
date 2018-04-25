@@ -157,55 +157,60 @@
 <?php endif; ?>
 
 
+
 <!-- Open Source Panel -->
+<?php
+if ( ! have_rows( 'open_source',35 ) ) {
+	return false;
+}
+if ( have_rows( 'open_source',35 ) ) : ?>
+<?php while ( have_rows( 'open_source',35 ) ) : the_row();
+
+// vars
+$title = get_sub_field('title');
+$tagline = get_sub_field('tagline');
+$image = get_sub_field('image');
+
+// Feature Repeater.
+if ( have_rows( 'feature' ) ) : ?>
+
 <div class="panel-open-source">
 	<div class="container">
 		<div class="row justify-content-center">
 			<div class="col-sm-9">
-				<h2 class="text-center">Secure and Open Source</h2>
-				<p class="tagline text-center">With over 50 years combined expreinece in cyber security and privacy protection, we are constantly striving to improve and refine our products.
-				</p>
+				<h2 class="text-center"><?php echo $title; ?></h2>
+				<p class="tagline text-center"><?php echo $tagline; ?></p>
 			</div>
 		</div>
 		<div class="row">
 			<div class="col-md-6">
-				<img class="hero-image" src="<?= get_template_directory_uri(); ?>/assets/images/app-screens-cropped.png">
+				<img class="hero-image" src="<?php echo $image; ?>" alt="">
 			</div>
 			<div class="col-md-6">
 				<div class="row">
+					<?php
+					while ( have_rows( 'feature' ) ) : the_row();
+					$title = get_sub_field( 'feature_title' );
+					$content = get_sub_field( 'feature_content' );
+					?>
 					<div class="col-6">
 						<div class="media-body">
 							<img src="<?= get_template_directory_uri(); ?>/assets/images/tick.png">
-							<h5 class="mt-0">Open Source</h5>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi omnis eum.</p>
+							<h5 class="mt-0"><?php echo esc_html( $title ); ?></h5>
+							<p><?php echo esc_html( $content ); ?></p>
 						</div>
 					</div>
-					<div class="col-6">
-						<div class="media-body">
-							<img src="<?= get_template_directory_uri(); ?>/assets/images/tick.png">
-							<h5 class="mt-0">No Log VPN</h5>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi omnis eum.</p>
-						</div>
-					</div>
-					<div class="col-6">
-						<div class="media-body">
-							<img src="<?= get_template_directory_uri(); ?>/assets/images/tick.png">
-							<h5 class="mt-0">Auto Updates</h5>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi omnis eum.</p>
-						</div>
-					</div>
-					<div class="col-6">
-						<div class="media-body">
-							<img src="<?= get_template_directory_uri(); ?>/assets/images/tick.png">
-							<h5 class="mt-0">Secure HTTPS</h5>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi omnis eum.</p>
-						</div>
-					</div>
-				</div>
+				<?php endwhile; ?> 
 			</div>
 		</div>
 	</div>
 </div>
+</div>
+<?php endif; ?>
+<?php endwhile; ?>
+<?php endif; ?>
+
+
 
 <!-- Testimonial -->
 <div class="panel-testimonial">

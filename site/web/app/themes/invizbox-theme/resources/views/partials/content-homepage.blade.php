@@ -7,8 +7,8 @@
 		<div class="jumbotron-detail">
 			<h1 class="jumbotron-heading"><?php the_field( 'hero_title' ); ?></h1>
 			<p class="lead"><?php the_field( 'hero_tagline' ); ?></p>
-			<a href="" class="btn btn-secondary">Learn More</a>
-			<a href="" class="btn btn-primary">Order Now</a>
+			<a href="<?php the_field( 'button_learn' ); ?>" class="btn btn-secondary">Learn More</a>
+			<a href="<?php the_field( 'button_order' ); ?>" class="btn btn-primary">Orderw Now</a>
 		</div>
 	</div>
 </section>
@@ -50,7 +50,6 @@
 	?>
 </div>
 </div>
-
 <!-- As Featured Panel-->
 <?php if ( have_rows( 'featured_on' ) ): ?>
 	<div class="panel-featured-on">
@@ -79,11 +78,6 @@
 	</div>
 </div>
 <?php endif; ?>
-
-
-
-
-
 <!-- Features Panel-->
 <?php if ( have_rows( 'features' ) ): ?>
 	<div class="panel-features">
@@ -114,32 +108,26 @@
 	</div>
 </div>
 <?php endif; ?>
-
 <!-- Video Panel-->
 <div class="video-panel">
-<div class="container">
-	<?php	
+	<div class="container">
+		<?php	
 // vars
-$video = get_field('video');	
-
-if( $video ): ?>
-<div id="video">
-	<div class="row">
-		<div class="col-sm-6">
-			<h2><?php echo $video['title']; ?></h2>
-			<p class="tagline"><?php echo $video['content']; ?></p>
-		</div>
-		<div class="col-sm-6">
-			<?php echo $video['video_file']; ?></div>
-		</div>
+		$video = get_field('video');	
+		if( $video ): ?>
+		<div id="video">
+			<div class="row">
+				<div class="col-sm-6">
+					<h2><?php echo $video['title']; ?></h2>
+					<p class="tagline"><?php echo $video['content']; ?></p>
+				</div>
+				<div class="col-sm-6">
+					<?php echo $video['video_file']; ?></div>
+				</div>
+			</div>
+		<?php endif; ?>
 	</div>
-<?php endif; ?>
 </div>
-
-</div>
-
-
-
 <!-- Bucket Panels-->
 <?php if ( have_rows( 'bucket_detail' ) ): ?>
 	<?php while ( have_rows( 'bucket_detail' ) ) : the_row();
@@ -170,54 +158,53 @@ if( $video ): ?>
 <?php endwhile; ?>
 <?php endif; ?>
 <!-- Open Source Panel -->
+<?php
+if ( ! have_rows( 'open_source' ) ) {
+	return false;
+}
+if ( have_rows( 'open_source' ) ) : ?>
+<?php while ( have_rows( 'open_source' ) ) : the_row();
+// vars
+$title = get_sub_field('title');
+$tagline = get_sub_field('tagline');
+$image = get_sub_field('image');
+// Feature Repeater.
+if ( have_rows( 'feature' ) ) : ?>
 <div class="panel-open-source">
 	<div class="container">
 		<div class="row justify-content-center">
 			<div class="col-sm-9">
-				<h2 class="text-center">Secure and Open Source</h2>
-				<p class="tagline text-center">With over 50 years combined expreinece in cyber security and privacy protection, we are constantly striving to improve and refine our products.
-				</p>
+				<h2 class="text-center"><?php echo $title; ?></h2>
+				<p class="tagline text-center"><?php echo $tagline; ?></p>
 			</div>
 		</div>
 		<div class="row">
 			<div class="col-md-6">
-				<img class="hero-image" src="<?= get_template_directory_uri(); ?>/assets/images/app-screens-cropped.png">
+				<img class="hero-image" src="<?php echo $image; ?>" alt="">
 			</div>
 			<div class="col-md-6">
 				<div class="row">
+					<?php
+					while ( have_rows( 'feature' ) ) : the_row();
+					$title = get_sub_field( 'feature_title' );
+					$content = get_sub_field( 'feature_content' );
+					?>
 					<div class="col-6">
 						<div class="media-body">
 							<img src="<?= get_template_directory_uri(); ?>/assets/images/tick.png">
-							<h5 class="mt-0">Open Source</h5>
-							<p>allows other security experts to examine our code, ensuring the best security</p>
+							<h5 class="mt-0"><?php echo esc_html( $title ); ?></h5>
+							<p><?php echo esc_html( $content ); ?></p>
 						</div>
 					</div>
-					<div class="col-6">
-						<div class="media-body">
-							<img src="<?= get_template_directory_uri(); ?>/assets/images/tick.png">
-							<h5 class="mt-0">No Log VPN</h5>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi omnis eum.</p>
-						</div>
-					</div>
-					<div class="col-6">
-						<div class="media-body">
-							<img src="<?= get_template_directory_uri(); ?>/assets/images/tick.png">
-							<h5 class="mt-0">Auto Updates</h5>
-							<p>Secure, regualr and automatic updates - we have already pushed over 20 updates!</p>
-						</div>
-					</div>
-					<div class="col-6">
-						<div class="media-body">
-							<img src="<?= get_template_directory_uri(); ?>/assets/images/tick.png">
-							<h5 class="mt-0">Secure HTTPS</h5>
-							<p>InvizBox will automatically connect you to exisitng HTTPS if available</p>
-						</div>
-					</div>
-				</div>
+				<?php endwhile; ?> 
 			</div>
 		</div>
 	</div>
 </div>
+</div>
+<?php endif; ?>
+<?php endwhile; ?>
+<?php endif; ?>
 <!-- Setup Steps -->
 <div class="panel-wide">
 	<h2 class="text-center">Super Easy Setup</h2>
